@@ -1,3 +1,2 @@
-# Arjan Jassal
-
-My personal website.
+# Abby
+CSS starter-kit framework built with scss.
