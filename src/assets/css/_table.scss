@@ -1,0 +1,48 @@
+/**
+ *
+ * ABBY
+ * TABLE
+ *
+ */
+
+table,
+.table {
+	box-sizing: border-box;
+	width: 100%;
+	margin: (0) (0) ($base-space);
+	border-collapse: collapse;
+}
+
+// thead,
+// .thead {
+// 	tr {
+// 		background: transparent;
+// 	}
+// }
+
+th,
+.th,
+td,
+.td {
+	padding: ($base-space / 2);
+}
+
+th,
+.th {
+	text-align: left;
+	background: white;
+}
+
+td,
+.td {
+	// padding-left: ($base-space / 2);
+	// padding-right: ($base-space / 2);
+}
+
+tr,
+.tr {
+
+	&:nth-child(odd) {
+		background: $light-grey;
+	}
+}

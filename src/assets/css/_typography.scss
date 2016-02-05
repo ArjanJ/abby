@@ -1,0 +1,74 @@
+/**
+ *
+ * ABBY
+ * TYPOGRPAHY
+ *
+ */
+
+:root {
+  font-size: $font-size-root;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-copy;
+  font-weight: $font-weight-default;
+  font-size: $font-size-body;
+  line-height: $line-height-base;
+  color: $text-color;
+}
+
+p {
+  margin: 0 0 $base-space;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 $base-space;
+  line-height: $line-height-headings;
+  font-weight: $font-weight-headings;
+  font-family: $font-headings;
+  color: $headings-color;
+}
+
+h1 {
+	margin-bottom: $base-space;
+  font-size: $font-size-h1;
+  line-height: 1;
+}
+
+h2 {
+	margin-bottom: ($base-space / 1.05);
+  font-size: $font-size-h2;
+  line-height: 1.05;
+}
+
+h3 {
+	margin-bottom: ($base-space / 1.1);
+  font-size: $font-size-h3;
+  line-height: 1.1;
+}
+
+h4 {
+	margin-bottom: ($base-space / 1.15);
+  font-size: $font-size-h4;
+  line-height: 1.15;
+}
+
+h5 {
+	margin-bottom: ($base-space / 1.2);
+  font-size: $font-size-h5;
+  line-height: 1.2;
+}
+
+h6 {
+	margin-bottom: ($base-space / 1.25);
+  font-size: $font-size-h6;
+  line-height: 1.25;
+}

@@ -1,0 +1,24 @@
+/**
+ *
+ * ABBY
+ * CODE
+ *
+ */
+
+pre {
+	display: block;
+}
+
+pre > code {
+	display: block;
+  white-space: pre;
+  padding: $base-space;
+  border: 1px solid darken($light-grey, 10);
+}
+
+code {
+	border-radius: 5px;
+  word-wrap: break-word;
+  background: $light-grey;
+  font-size: $font-size-9;
+}
