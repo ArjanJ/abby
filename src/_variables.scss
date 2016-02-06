@@ -1,0 +1,57 @@
+/**
+ *
+ * ABBY
+ * VARIABLES
+ *
+ */
+
+$font-size-root: 				0.625rem;
+$line-height-base: 			1.6;
+$line-height-headings: 	1.1;
+
+$font-size-1: 	7.594rem;
+$font-size-2: 	6.328rem;
+$font-size-3: 	5.062rem;
+$font-size-4: 	4.218rem;
+$font-size-5: 	3.374rem;
+$font-size-6: 	2.812rem;
+$font-size-7: 	2.250rem;
+$font-size-8: 	1.875rem;
+$font-size-9: 	1.500rem;
+$font-size-10: 	1.250rem;
+
+$font-size-body: $font-size-9;
+
+$font-size-h1: $font-size-4;
+$font-size-h2: $font-size-5;
+$font-size-h3: $font-size-6;
+$font-size-h4: $font-size-7;
+$font-size-h5: $font-size-8;
+$font-size-h6: $font-size-9;
+
+$font-weight-default: 	300;
+$font-weight-headings: 	300;
+
+$font-copy: 		'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-headings: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+$base-space: ($line-height-base) * ($font-size-body);
+
+$black: 			#212121;
+$dark-grey: 	#424242;
+$mid-grey: 		#BDBDBD;
+$light-grey: 	#F5F5F5;
+$white: 			#FAFAFA;
+$red: 				#F44336;
+$pink: 				#E91E63;
+$purple: 			#E91E63;
+$indigo: 			#3F51B5;
+$blue: 				#2196F3;
+$cyan: 				#00BCD4;
+$green: 			#4CAF50;
+$yellow: 			#FFEB3B;
+$orange: 			#FF9800;
+$brown: 			#795548;
+
+$headings-color: 	$dark-grey;
+$text-color: 			$black;

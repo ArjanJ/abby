@@ -13,17 +13,17 @@ button,
 	appearance: none;
 	border: 1px solid $mid-grey;
 	display: inline-block;
-	margin: (0) (0) ($base-space);
+	margin: (0) ($base-space / 6) ($base-space) (0);
 	padding: ($base-space / 3) ($base-space);
 	border-radius: 5px;
 	vertical-align: middle;
 	white-space: nowrap;
 	cursor: pointer;
 	line-height: inherit;
-	font-size: $font-size-10;
+	font-size: $font-size-9;
 	letter-spacing: .2px;
 	color: inherit;
-	background: $white;
+	background: white;
 
 	&:focus {
 		outline: none;

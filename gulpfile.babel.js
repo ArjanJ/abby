@@ -9,7 +9,6 @@ import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 import sass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
-import swig from 'gulp-swig';
 
 const bs = browserSync.create();
 
@@ -19,25 +18,18 @@ const dirs = {
 };
 
 const paths = {
-	templates: {
-		src: `${dirs.src}/templates/**/*.swig`,
-		views: `${dirs.src}/templates/views/*.swig`,
-		build: dirs.build
-	},
 	css: {
-		src: `${dirs.src}/assets/css/*.scss`,
-		build: `${dirs.build}/assets/css`
+		src: `${dirs.src}/*.scss`,
+		build: `${dirs.build}`
 	},
 	deploy: `${dirs.build}/**/*`
 };
 
-gulp.task('default', ['serve', 'watch', 'templates', 'styles']);
+gulp.task('default', ['serve', 'watch', 'styles']);
 
 gulp.task('serve', serve);
 
 gulp.task('watch', watch);
-
-gulp.task('templates', templates);
 
 gulp.task('styles', styles);
 
@@ -46,7 +38,7 @@ gulp.task('deploy', deploy);
 function serve() {
 	bs.init({
 		server: {
-			baseDir: dirs.build
+			baseDir: '.'
 		},
 		open: false,
 		notify: false
@@ -54,19 +46,7 @@ function serve() {
 }
 
 function watch() {
-	gulp.watch(paths.templates.src, ['templates', bs.reload]);
 	gulp.watch(paths.css.src, ['styles']);
-}
-
-function templates() {
-	return gulp.src(paths.templates.views)
-		.pipe(swig({
-			defaults: {
-				cache: false
-			}
-		}))
-		.on('error', handleError)
-		.pipe(gulp.dest(paths.templates.build));
 }
 
 function styles() {

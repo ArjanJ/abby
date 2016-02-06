@@ -1,8 +1,8 @@
 {
   "name": "abby",
   "version": "0.0.1",
-  "description": "Abby is a no frills css framework.",
-  "main": "gulpfile.js",
+  "description": "Abby is a CSS starter-kit built with scss.",
+  "main": "./build/abby.css",
   "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,7 +29,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.1",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-swig": "^0.8.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-scss": "^0.1.3",
     "precss": "^1.4.0"

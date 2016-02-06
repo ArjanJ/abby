@@ -11,12 +11,14 @@ pre {
 
 pre > code {
 	display: block;
+	margin-bottom: $base-space;
   white-space: pre;
   padding: $base-space;
   border: 1px solid darken($light-grey, 10);
 }
 
 code {
+	padding: ($base-space / 6);
 	border-radius: 5px;
   word-wrap: break-word;
   background: $light-grey;
