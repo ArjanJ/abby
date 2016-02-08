@@ -10,7 +10,8 @@ pre > code {
 	display: block;
 	margin-bottom: $base-space;
   white-space: pre;
-  padding: $base-space;
+  padding: ($base-space / 1.5);
+  font-size: $font-size-10;
 }
 
 code {

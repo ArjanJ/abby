@@ -36,32 +36,168 @@
  				<section class="docs-intro">
  					<article class="docs-intro__wrapper">
  						<h1 class="docs-intro__heading">Abby</h1>
- 						<p class="docs-intro__subheading">A lightweight, responsive CSS starter-kit customizable with SCSS.</p>
+ 						<p class="docs-intro__subheading">A lightweight CSS starter-kit, customizable with SCSS.</p>
  						<a href="" class="button docs-intro__dl-btn">Download</a>
  						<a href="" class="button">View on Github</a>
 						<pre><code>npm install abby</code></pre>
  					</article>
  				</section>
  				
- 				<section class="docs-section grid">
- 					<div class="docs-section__panel grid__col">
- 						<h1>Heading 1</h1>
- 						<h2>Heading 2</h2>
- 						<h3>Heading 3</h3>
- 						<h4>Heading 4</h4>
- 						<h5>Heading 5</h5>
- 						<h6>Heading 6</h6>
- 					</div>
- 					<div class="docs-section__panel grid__col">
- 						<h2>Headings</h2>
-			      <pre><code><span>&lt;h1&gt;Heading 1&lt;/h1&gt;</span>
+ 				<section class="docs-section">
+ 					<h1>Typography</h1>
+ 					<p>Abby's typography follows a simple set of rules, all in <code>rem</code> units. To create a consistent vertical rhythm, all headings and paragraphs have the same <code>margin-bottom</code> value, which is equal to the body font size multiplied by the base line-height. The font sizes throughout Abby are calculated by following the perfect fith ratio to create a consistent and pleasing look.</p>
+					
+ 					<div class="grid">
+ 						<div class="grid__col">
+ 							<h1>Heading 1 <code>h1</code></h1>
+ 							<h2>Heading 2 <code>h2</code></h2>
+ 							<h3>Heading 3 <code>h3</code></h3>
+ 							<h4>Heading 4 <code>h4</code></h4>
+ 							<h5>Heading 5 <code>h5</code></h5>
+ 							<h6>Heading 6 <code>h6</code></h6>
+ 						</div>
+ 						<div class="grid__col">
+ 							<pre><code><span>&lt;h1&gt;Heading 1&lt;/h1&gt;</span>
 <span>&lt;h2&gt;Heading 2&lt;/h2&gt;</span>
 <span>&lt;h3&gt;Heading 3&lt;/h3&gt;</span>
 <span>&lt;h4&gt;Heading 4&lt;/h4&gt;</span>
 <span>&lt;h5&gt;Heading 5&lt;/h5&gt;</span>
 <span>&lt;h6&gt;Heading 6&lt;/h6&gt;</span>
 </code></pre>
+ 						</div>
  					</div>
+
+ 					<p>
+ 						This is what <strong>bold text</strong> looks like.<br>
+ 						This is what <em>italicized text</em> looks like.<br>
+ 						This is what <span class="underline">underlined text</span> looks like.<br>
+ 						This is what <small>small text</small> looks like.
+ 					</p>
+
+ 					<pre><code>&lt;p&gt;This is what &lt;strong&gt;bold text&lt;/strong&gt; looks like.&lt;/p&gt;
+&lt;p&gt;This is what &lt;em&gt;italicized text&lt;/em&gt; looks like.&lt;/p&gt;
+&lt;p&gt;This is what &lt;span class="underline"&gt;underlined text&lt;/span&gt; looks like.&lt;/p&gt;
+&lt;p&gt;This is what &lt;small&gt;small text&lt;/small&gt; looks like.&lt;/p&gt;</code></pre>
+ 				</section>
+
+ 				<section class="docs-section docs-section--grid">
+ 					<h1>Grids</h1>
+ 					<p>Abby's grid is created using flexbox. The markup and flexibility is dead simple. Simply add an element with the class <code>grid__col</code> inside of an element with the class <code>grid</code> and it will be treated as a column. There are no container or row classes, simply a <code>grid</code> class which is a container for the grid columns. To create a new row you must create a new element with the <code>grid</code> class.</p>
+
+					<div class="grid">
+		  			<div class="grid__col grid__col--3">
+		  				<code>.grid__col .grid__col--3</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+		  		<div class="grid">
+		  			<div class="grid__col grid__col--2">
+		  				<code>.grid__col .grid__col--2</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+		  		<div class="grid">
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+		  		<div class="grid">
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+		  		<div class="grid grid-last">
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+
+		  		<pre><code>&lt;div class="grid"&gt;
+  &lt;div class="grid__col"&gt;
+  &lt;div class="grid__col"&gt;
+&lt;/div&gt;</code></pre>
+
+		  		<h4>Modifier Classes</h4>
+		  		<p>In order to have columns that are larger than others in the same "row" we need some modifier classes to change the <code>flex-grow</code> property. The class <code>grid__col--3</code> means make this element 3x as large as the other elements in the same "flexed" box. Within Abby there are six modifier classes available for the <code>grid__col</code> class.</p>
+
+		  		<div class="grid">
+		  			<div class="grid__col grid__col--6">
+		  				<code>.grid__col .grid__col--6</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+
+		  		<div class="grid">
+		  			<div class="grid__col grid__col--5">
+		  				<code>.grid__col .grid__col--5</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+
+		  		<div class="grid">
+		  			<div class="grid__col grid__col--4">
+		  				<code>.grid__col .grid__col--4</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+
+		  		<div class="grid">
+		  			<div class="grid__col grid__col--3">
+		  				<code>.grid__col .grid__col--3</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+
+		  		<div class="grid">
+		  			<div class="grid__col grid__col--2">
+		  				<code>.grid__col .grid__col--2</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+
+		  		<div class="grid grid-last">
+		  			<div class="grid__col grid__col--1">
+		  				<code>.grid__col .grid__col--1</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+
+		  		<h4>Gutters</h4>
+		  		<p>Abby has customizable gutters. By default the grid gutters are set to <code>0.8rem</code>. This can be changed in <code>/src/_variables.scss</code>.</p>
  				</section>
 
  			</section>

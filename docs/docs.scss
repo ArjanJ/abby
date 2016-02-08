@@ -4,6 +4,7 @@
 $header-height: 4.8rem;
 
 .docs {
+	background: $white;
 
 	&-header {
 		display: flex;
@@ -17,7 +18,6 @@ $header-height: 4.8rem;
 		z-index: 10;
 		height: $header-height;
 		background: $white;
-		// background: $light-grey;
 	}
 
 	&-content {
@@ -66,6 +66,31 @@ $header-height: 4.8rem;
 		code {
 			display: inline-block;
 			padding: ($base-space / 4) ($base-space);
+			background: #2b303b;
+			color: $white;
+		}
+	}
+
+	&-section {
+		max-width: 740px;
+		margin: (0) (auto) ($base-space * 1.5);
+		padding: (0) ($base-space);
+
+		&--grid {
+
+			.grid__col {
+				display: flex;
+				align-items: center;
+				padding-left: ($base-space / 2);
+				height: 35px;
+				margin-bottom: $grid-gutter;
+				border-radius: 5px;
+				background: $light-grey;
+			}
+
+			.grid-last {
+				margin-bottom: $base-space;
+			}
 		}
 	}
 }

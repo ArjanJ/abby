@@ -65,7 +65,7 @@ $bp-xlarge: 	1100px;
  * GRID
  */
 
-$grid-gutter: 10px;
+$grid-gutter: ($base-space / 3);
 
 /**
  * COLORS

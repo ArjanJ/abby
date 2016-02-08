@@ -131,40 +131,41 @@ h3,
 h4,
 h5,
 h6 {
+  margin-bottom: 2.4rem;
   line-height: 1.1;
   font-weight: 300;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #424242; }
 
 h1 {
-  margin-bottom: 2.4rem;
   font-size: 4.218rem;
   line-height: 1; }
 
 h2 {
-  margin-bottom: 2.28571rem;
   font-size: 3.374rem;
   line-height: 1.05; }
 
 h3 {
-  margin-bottom: 2.18182rem;
   font-size: 2.812rem;
   line-height: 1.1; }
 
 h4 {
-  margin-bottom: 2.08696rem;
   font-size: 2.25rem;
   line-height: 1.15; }
 
 h5 {
-  margin-bottom: 2rem;
   font-size: 1.875rem;
   line-height: 1.2; }
 
 h6 {
-  margin-bottom: 1.92rem;
   font-size: 1.5rem;
   line-height: 1.25; }
+
+small {
+  font-size: 75%; }
+
+.underline {
+  text-decoration: underline; }
 
 /*------------------------------------*		#GRID
 \*------------------------------------*/
@@ -216,7 +217,7 @@ h6 {
           -ms-flex-wrap: no-wrap;
               flex-wrap: no-wrap; }
       .grid__col {
-        margin-left: 10px; }
+        margin-left: 0.8rem; }
         .grid__col:first-child {
           margin-left: 0; } }
 
@@ -365,7 +366,8 @@ pre > code {
   display: block;
   margin-bottom: 2.4rem;
   white-space: pre;
-  padding: 2.4rem; }
+  padding: 1.6rem;
+  font-size: 1.25rem; }
 
 code {
   padding: 0.4rem;
