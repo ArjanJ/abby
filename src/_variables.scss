@@ -1,8 +1,10 @@
+/*------------------------------------*\
+		#VARIABLES
+\*------------------------------------*/
+
+
 /**
- *
- * ABBY
- * VARIABLES
- *
+ * FONT SIZING
  */
 
 $font-size-root: 				0.625rem;
@@ -29,18 +31,50 @@ $font-size-h4: $font-size-7;
 $font-size-h5: $font-size-8;
 $font-size-h6: $font-size-9;
 
+/**
+ * FONT WEIGHTS
+ */
+
 $font-weight-default: 	300;
 $font-weight-headings: 	300;
+
+/**
+ * FONT FAMILY
+ */
 
 $font-copy: 		'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $font-headings: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
+/**
+ * BASE SPACING VALUE
+ */
+
 $base-space: ($line-height-base) * ($font-size-body);
+
+/**
+ * BREAKPOINTS
+ */
+
+$bp-xsmall: 	480px;
+$bp-small: 		640px;
+$bp-medium: 	768px;
+$bp-large: 		960px;
+$bp-xlarge: 	1100px;
+
+/**
+ * GRID
+ */
+
+$grid-gutter: 10px;
+
+/**
+ * COLORS
+ */
 
 $black: 			#212121;
 $dark-grey: 	#424242;
 $mid-grey: 		#BDBDBD;
-$light-grey: 	#F5F5F5;
+$light-grey: 	#F1F1F1;
 $white: 			#FAFAFA;
 $red: 				#F44336;
 $pink: 				#E91E63;

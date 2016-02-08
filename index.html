@@ -1,196 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Abby</title>
-		<meta name="description" content="">
-
-		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="./build/abby.css">
-
-		
-
-	<style>
-		.wrapper {
-			max-width: 700px;
-			margin: 0 auto;
-			padding: 0 4.4rem;
-		}
-
-		section {
-			padding: 4.4rem 0rem;
-		}
-
-		section > h2 {
-			text-align: center;
-		}
-
-		.u-clr-white {
-			color: #FAFAFA;
-		}
-
-		.u-clr-black {
-			color: #212121;
-		}
-
-		.u-bg-red {
-			background: #F44336;
-		}
-
-		.u-bg-pink {
-			background: #E91E63;
-		}
-
-		.u-bg-blue {
-			background: #2196F3;
-		}
-
-		.u-bg-orange {
-			background: #2196F3;
-		}
-	</style>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abby</title>
+  <meta name="description" content="">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./build/abby.css">
+  <style>
+  .wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 4.4rem;
+  }
+  
+  section {
+    padding: 4.4rem 0rem;
+  }
+  
+  section > h2 {
+    text-align: center;
+  }
+  
+  .u-clr-white {
+    color: #FAFAFA;
+  }
+  
+  .u-clr-black {
+    color: #212121;
+  }
+  
+  .u-bg-red {
+    background: #F44336;
+  }
+  
+  .u-bg-pink {
+    background: #E91E63;
+  }
+  
+  .u-bg-blue {
+    background: #2196F3;
+  }
+  
+  .u-bg-orange {
+    background: #2196F3;
+  }
 
 
-	</head>
+  .grid__col {
+  	height: 35px;
+  	border-radius: 5px;
+  	margin-bottom: 10px;
+  	background: lightgrey;
+  }
+  </style>
+</head>
 
-	<body>
+<body>
+  <section>
+    <h2>Abby - Headings</h2>
+    <div class="wrapper">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
 
-		
-
-	<section>
-		<h2>Abby - Headings</h2>
-		<div class="wrapper">
-			<h1>Heading 1</h1>
-			<h2>Heading 2</h2>
-			<h3>Heading 3</h3>
-			<h4>Heading 4</h4>
-			<h5>Heading 5</h5>
-			<h6>Heading 6</h6>
-		</div>			
-	</section>
-	<section>
-		<h2>Abby - Lists</h2>
-		<div class="wrapper">
-			<ul>
-				<li>List item 1</li>
-				<li>List item 2</li>
-				<ul>
-					<li>Sublist item 1</li>
-					<li>Sublist item 2</li>
-					<li>Sublist item 3</li>
-				</ul>
-				<li>List item 3</li>
-				<li>List item 4</li>
-			</ul>
-		</div>
-	</section>
-	<section>
-		<h2>Abby - Code</h2>
-		<div class="wrapper">
-<pre><code><span>&lt;h1&gt;Heading 1&lt;/h1&gt;</span>
+      <p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipisicing elit. <i>Laborum qui nobis</i>, nostrum iusto. Repellat reiciendis quo asperiores dolorum quam quidem consectetur qui sint, cupiditate, assumenda consequuntur aperiam distinctio facere molestiae.</p>
+    </div>
+  </section>
+  <section>
+  	<h2>Grid</h2>
+  	<div class="wrapper">
+  		<div class="grid">
+  			<div class="grid__col grid__col--3"></div>
+  			<div class="grid__col"></div>
+  		</div>
+  		<div class="grid">
+  			<div class="grid__col grid__col--2"></div>
+  			<div class="grid__col"></div>
+  		</div>
+  		<div class="grid">
+  			<div class="grid__col"></div>
+  			<div class="grid__col"></div>
+  		</div>
+  		<div class="grid">
+  			<div class="grid__col"></div>
+  			<div class="grid__col"></div>
+  			<div class="grid__col"></div>
+  		</div>
+  		<div class="grid">
+  			<div class="grid__col"></div>
+  			<div class="grid__col"></div>
+  			<div class="grid__col"></div>
+  			<div class="grid__col"></div>
+  		</div>
+  	</div>
+  </section>
+  <section>
+    <h2>Abby - Lists</h2>
+    <div class="wrapper">
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <ul>
+          <li>Sublist item 1</li>
+          <li>Sublist item 2</li>
+          <li>Sublist item 3</li>
+        </ul>
+        <li>List item 3</li>
+        <li>List item 4</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <h2>Abby - Code</h2>
+    <div class="wrapper">
+      <pre><code><span>&lt;h1&gt;Heading 1&lt;/h1&gt;</span>
 <span>&lt;h2&gt;Heading 2&lt;/h2&gt;</span>
 
 .class {
   color: red;
 }
 </code></pre>
+      <p>This is some <code>inline</code> code.</p>
+    </div>
+  </section>
+  <section>
+    <h2>Forms</h2>
+    <div class="wrapper">
+      <form>
+        <fieldset>
+          <label for="">Name</label>
+          <input type="text" placeholder="Name">
+          <label for="">Email</label>
+          <input type="email" placeholder="Email">
+          <label for="">Country</label>
+          <select name="" id="">
+            <option value="">Canada</option>
+            <option value="">France</option>
+            <option value="">USA</option>
+            <option value="">UK</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="checkbox">
+            <input type="checkbox" id="checkbox"> Signup for Newsletter
+          </label>
+          <label for="radio">
+            <input type="radio" id="radio"> Signup for Newsletter
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="message">Message:</label>
+          <textarea id="message" placeholder="What's on your mind?" cols="30" rows="3"></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <section>
+    <h2>Buttons</h2>
+    <div class="wrapper">
+      <button type="button">Button Element</button>
+      <a href="" class="button">Anchor Button</a>
+      <input type="button" value="Button Input">
+      <input type="submit" value="Submit Input">
+    </div>
+  </section>
+  <section>
+    <h2>Tables</h2>
+    <div class="wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dave Gamache</td>
+            <td>26</td>
+            <td>Male</td>
+            <td>San Francisco</td>
+          </tr>
+          <tr>
+            <td>Dwayne Johnson</td>
+            <td>42</td>
+            <td>Male</td>
+            <td>Hayward</td>
+          </tr>
+          <tr>
+            <td>Mary Jane</td>
+            <td>23</td>
+            <td>Female</td>
+            <td>New York</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</body>
 
-			<p>This is some <code>inline</code> code.</p>
-		</div>
-	</section>
-
-	<section>
-		<h2>Forms</h2>
-		<div class="wrapper">
-			<form>
-
-				<fieldset>
-					<label for="">Name</label>
-					<input type="text" placeholder="Name">
-
-					<label for="">Email</label>
-					<input type="email" placeholder="Email">
-
-					<label for="">Country</label>
-					<select name="" id="">
-						<option value="">Canada</option>
-						<option value="">France</option>
-						<option value="">USA</option>
-						<option value="">UK</option>
-					</select>
-				</fieldset>
-				
-				<fieldset>
-					<label for="checkbox">
-						<input type="checkbox" id="checkbox"> Signup for Newsletter
-					</label>
-
-					<label for="radio">
-						<input type="radio" id="radio"> Signup for Newsletter
-					</label>
-				</fieldset>
-				
-				<fieldset>
-					<label for="message">Message:</label>
-					<textarea id="message" placeholder="What's on your mind?" cols="30" rows="3"></textarea>
-				</fieldset>
-
-				<button type="submit">Submit</button>
-			</form>
-		</div>
-	</section>
-
-	<section>
-		<h2>Buttons</h2>
-		<div class="wrapper">
-			<button type="button">Button Element</button>
-			<a href="" class="button">Anchor Button</a>
-			<input type="button" value="Button Input">
-			<input type="submit" value="Submit Input">
-		</div>
-	</section>
-
-	<section>
-		<h2>Tables</h2>
-		<div class="wrapper">
-			<table>
-			  <thead>
-			    <tr>
-			      <th>Name</th>
-			      <th>Age</th>
-			      <th>Sex</th>
-			      <th>Location</th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			    <tr>
-			      <td>Dave Gamache</td>
-			      <td>26</td>
-			      <td>Male</td>
-			      <td>San Francisco</td>
-			    </tr>
-			    <tr>
-			      <td>Dwayne Johnson</td>
-			      <td>42</td>
-			      <td>Male</td>
-			      <td>Hayward</td>
-			    </tr>
-			    <tr>
-			      <td>Mary Jane</td>
-			      <td>23</td>
-			      <td>Female</td>
-			      <td>New York</td>
-			    </tr>
-			  </tbody>
-			</table>
-		</div>
-	</section>
-		
-
-		
-
-	</body>
 </html>

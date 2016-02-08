@@ -14,24 +14,28 @@ const bs = browserSync.create();
 
 const dirs = {
 	src: './src',
-	build: './build'
+	build: './build',
+	docs: './docs',
 };
 
 const paths = {
 	css: {
-		src: `${dirs.src}/*.scss`,
-		build: `${dirs.build}`
+		src: `${dirs.src}/**/*.scss`,
+		build: `${dirs.build}`,
+		docs: './docs/*.scss'
 	},
 	deploy: `${dirs.build}/**/*`
 };
 
-gulp.task('default', ['serve', 'watch', 'styles']);
+gulp.task('default', ['serve', 'watch', 'styles', 'docStyles']);
 
 gulp.task('serve', serve);
 
 gulp.task('watch', watch);
 
 gulp.task('styles', styles);
+
+gulp.task('docStyles', docStyles);
 
 gulp.task('deploy', deploy);
 
@@ -47,6 +51,7 @@ function serve() {
 
 function watch() {
 	gulp.watch(paths.css.src, ['styles']);
+	gulp.watch(paths.css.docs, ['docStyles']);
 }
 
 function styles() {
@@ -61,6 +66,17 @@ function styles() {
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest(paths.css.build))
 		.pipe(bs.stream());
+}
+
+function docStyles() {
+	return gulp.src(paths.css.docs)
+			.pipe(sass())
+			.on('error', handleError)
+			.pipe(postcss([
+				autoprefixer()			
+			]))
+			.pipe(gulp.dest(dirs.docs))
+			.pipe(bs.stream());
 }
 
 function deploy() {

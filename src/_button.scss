@@ -1,9 +1,6 @@
-/**
- *
- * ABBY
- * BUTTONS
- *
- */
+/*------------------------------------*\
+		#BUTTON
+\*------------------------------------*/
 
 button,
 .button,
@@ -11,7 +8,7 @@ button,
 [type="submit"],
 [type="reset"] {
 	appearance: none;
-	border: 1px solid $mid-grey;
+	border: none;
 	display: inline-block;
 	margin: (0) ($base-space / 6) ($base-space) (0);
 	padding: ($base-space / 3) ($base-space);
@@ -22,8 +19,8 @@ button,
 	line-height: inherit;
 	font-size: $font-size-9;
 	letter-spacing: .2px;
-	color: inherit;
-	background: white;
+	color: $text-color;
+	background: $light-grey;
 
 	&:focus {
 		outline: none;
