@@ -47,7 +47,7 @@
  					<h1>Typography</h1>
  					<p>Abby's typography follows a simple set of rules, all in <code>rem</code> units. To create a consistent vertical rhythm, all headings and paragraphs have the same <code>margin-bottom</code> value, which is equal to the body font size multiplied by the base line-height. The font sizes throughout Abby are calculated by following the perfect fith ratio to create a consistent and pleasing look.</p>
 					
- 					<div class="grid">
+ 					<div class="grid grid-last">
  						<div class="grid__col">
  							<h1>Heading 1 <code>h1</code></h1>
  							<h2>Heading 2 <code>h2</code></h2>
@@ -82,7 +82,7 @@
 
  				<section class="docs-section docs-section--grid">
  					<h1>Grids</h1>
- 					<p>Abby's grid is created using flexbox. The markup and flexibility is dead simple. Simply add an element with the class <code>grid__col</code> inside of an element with the class <code>grid</code> and it will be treated as a column. There are no container or row classes, simply a <code>grid</code> class which is a container for the grid columns. To create a new row you must create a new element with the <code>grid</code> class.</p>
+ 					<p>Abby's grid system is created using flexbox. The markup and flexibility is dead simple. Simply add an element with the class <code>grid__col</code> inside of an element with the class <code>grid</code> and it will be treated as a column. There are no container or row classes, simply a <code>grid</code> class which is a container for the grid columns. To create a new row you must create a new element with the <code>grid</code> class.</p>
 
 					<div class="grid">
 		  			<div class="grid__col grid__col--3">
@@ -139,7 +139,7 @@
   &lt;div class="grid__col"&gt;
 &lt;/div&gt;</code></pre>
 
-		  		<h4>Modifier Classes</h4>
+		  		<h2>Modifier Classes</h2>
 		  		<p>In order to have columns that are larger than others in the same "row" we need some modifier classes to change the <code>flex-grow</code> property. The class <code>grid__col--3</code> means make this element 3x as large as the other elements in the same "flexed" box. Within Abby there are six modifier classes available for the <code>grid__col</code> class.</p>
 
 		  		<div class="grid">
@@ -196,8 +196,210 @@
 		  			</div>
 		  		</div>
 
-		  		<h4>Gutters</h4>
+		  		<h2>Gutters</h2>
 		  		<p>Abby has customizable gutters. By default the grid gutters are set to <code>0.8rem</code>. This can be changed in <code>/src/_variables.scss</code>.</p>
+ 				</section>
+
+ 				<section class="docs-section">
+ 					<h1>Forms</h1>
+ 					<p>Abby's forms are kept as simple and usable as can be while still looking good. Abby's grid system can be used in conjuction with the forms to create different layouts.</p>
+ 					<form>
+ 					  <fieldset>
+ 					  	<div class="grid">
+				  			<div class="grid__col">
+				  				<label for="">Name</label>
+				  				<input type="text" placeholder="Name">
+				  			</div>
+				  		  <div class="grid__col">
+				  		  	<label for="">Email</label>
+				  		  	<input type="email" placeholder="Email">
+				  		  </div>
+ 					  	</div>
+ 					    <label for="">Country</label>
+ 					    <select name="" id="">
+ 					      <option value="">Canada</option>
+ 					      <option value="">France</option>
+ 					      <option value="">USA</option>
+ 					      <option value="">UK</option>
+ 					    </select>
+ 					  </fieldset>
+ 					  <fieldset>
+ 					    <label for="checkbox">
+ 					      <input type="checkbox" id="checkbox"> Signup for Newsletter
+ 					    </label>
+ 					    <label for="radio">
+ 					      <input type="radio" id="radio"> Signup for Newsletter
+ 					    </label>
+ 					  </fieldset>
+ 					  <fieldset>
+ 					    <label for="message">Message:</label>
+ 					    <textarea id="message" placeholder="What's on your mind?" cols="30" rows="3"></textarea>
+ 					  </fieldset>
+ 					  <button type="submit">Submit</button>
+ 					</form>
+
+ 					<pre><code>&lt;form&gt;
+  &lt;fieldset&gt;
+  	&lt;div class="grid"&gt;
+  	&lt;div class="grid__col"&gt;
+  		&lt;label for=""&gt;Name&lt;/label&gt;
+  		&lt;input type="text" placeholder="Name"&gt;
+  	&lt;/div&gt;
+    &lt;div class="grid__col"&gt;
+    	&lt;label for=""&gt;Email&lt;/label&gt;
+    	&lt;input type="email" placeholder="Email"&gt;
+    &lt;/div&gt;
+  	&lt;/div&gt;
+    &lt;label for=""&gt;Country&lt;/label&gt;
+    &lt;select name="" id=""&gt;
+      &lt;option value=""&gt;Canada&lt;/option&gt;
+      &lt;option value=""&gt;France&lt;/option&gt;
+      &lt;option value=""&gt;USA&lt;/option&gt;
+      &lt;option value=""&gt;UK&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/fieldset&gt;
+
+  &lt;fieldset&gt;
+    &lt;label for="checkbox"&gt;
+      &lt;input type="checkbox" id="checkbox"&gt; Signup for Newsletter
+    &lt;/label&gt;
+    &lt;label for="radio"&gt;
+      &lt;input type="radio" id="radio"&gt; Signup for Newsletter
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" placeholder="What's on your mind?" cols="30" rows="3"&gt;&lt;/textarea&gt;
+  &lt;/fieldset&gt;
+
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+ 				</section>
+
+ 				<section class="docs-section">
+ 					<h1>Buttons</h1>
+ 					<button type="button">Button Element</button>
+ 					<a href="" class="button">Anchor Button</a>
+ 					<input type="button" value="Button Input">
+ 					<input type="submit" value="Submit Input">
+
+          <pre><code>&lt;button type="button">Button Element&lt;/button&gt;
+&lt;a href="" class="button"&gt;Anchor Button&lt;/a&gt;
+&lt;input type="button" value="Button Input"&gt;
+&lt;input type="submit" value="Submit Input"&gt;</code></pre>
+ 				</section>
+
+ 				<section class="docs-section">
+ 					<h1>Lists</h1>
+ 					<ul>
+ 					  <li>List item 1</li>
+ 					  <li>List item 2</li>
+ 					  <ul>
+ 					    <li>Sublist item 1</li>
+ 					    <li>Sublist item 2</li>
+ 					    <li>Sublist item 3</li>
+ 					  </ul>
+ 					  <li>List item 3</li>
+ 					  <li>List item 4</li>
+ 					</ul>
+
+          <pre><code>&lt;ul&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Sublist item 1&lt;/li&gt;
+    &lt;li&gt;Sublist item 2&lt;/li&gt;
+    &lt;li&gt;Sublist item 3&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+  &lt;li&gt;List item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+ 				</section>
+
+ 				<section class="docs-section">
+ 					<h1>Tables</h1>
+ 					<table>
+ 					  <thead>
+ 					    <tr>
+ 					      <th>Name</th>
+ 					      <th>Age</th>
+ 					      <th>Sex</th>
+ 					      <th>Location</th>
+ 					    </tr>
+ 					  </thead>
+ 					  <tbody>
+ 					    <tr>
+ 					      <td>Dave Gamache</td>
+ 					      <td>26</td>
+ 					      <td>Male</td>
+ 					      <td>San Francisco</td>
+ 					    </tr>
+ 					    <tr>
+ 					      <td>Dwayne Johnson</td>
+ 					      <td>42</td>
+ 					      <td>Male</td>
+ 					      <td>Hayward</td>
+ 					    </tr>
+ 					    <tr>
+ 					      <td>Mary Jane</td>
+ 					      <td>23</td>
+ 					      <td>Female</td>
+ 					      <td>New York</td>
+ 					    </tr>
+ 					  </tbody>
+ 					</table>
+
+          <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+      &lt;th&gt;Sex&lt;/th&gt;
+      &lt;th&gt;Location&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Dave Gamache&lt;/td&gt;
+      &lt;td&gt;26&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;San Francisco&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Dwayne Johnson&lt;/td&gt;
+      &lt;td&gt;42&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;Hayward&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mary Jane&lt;/td&gt;
+      &lt;td&gt;23&lt;/td&gt;
+      &lt;td&gt;Female&lt;/td&gt;
+      &lt;td&gt;New York&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+ 				</section>
+
+ 				<section class="docs-section">
+ 					<h1>Code</h1>
+ 					      <pre><code><span>&lt;h1&gt;Heading 1&lt;/h1&gt;</span>
+<span>&lt;h2&gt;Heading 2&lt;/h2&gt;</span>
+
+.class {
+  color: red;
+}</code></pre>
+
+  				<p><code>This is some inline code</code> within a paragraph.</p>
+
+          <pre><code>&lt;pre&gt;&lt;code&gt;&lt;span&gt;&lt;h1&gt;Heading 1&lt;/h1&gt;&lt;/span&gt;
+&lt;span&gt;&lt;h2&gt;Heading 2&lt;/h2&gt;&lt;/span&gt;
+
+.class {
+  color: red;
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;This is some inline code&lt;/code&gt; within a paragraph.&lt;/p&gt;</code></pre>
  				</section>
 
  			</section>

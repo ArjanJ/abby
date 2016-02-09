@@ -74,7 +74,11 @@ $header-height: 4.8rem;
 	&-section {
 		max-width: 740px;
 		margin: (0) (auto) ($base-space * 1.5);
-		padding: (0) ($base-space);
+		padding: (0) ($base-space * 2);
+
+		.grid-last {
+			margin-bottom: $base-space;
+		}
 
 		&--grid {
 
@@ -86,10 +90,6 @@ $header-height: 4.8rem;
 				margin-bottom: $grid-gutter;
 				border-radius: 5px;
 				background: $light-grey;
-			}
-
-			.grid-last {
-				margin-bottom: $base-space;
 			}
 		}
 	}

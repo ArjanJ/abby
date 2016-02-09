@@ -92,7 +92,9 @@
   .docs-section {
     max-width: 740px;
     margin: 0 auto 3.6rem;
-    padding: 0 2.4rem; }
+    padding: 0 4.8rem; }
+    .docs-section .grid-last {
+      margin-bottom: 2.4rem; }
     .docs-section--grid .grid__col {
       display: -webkit-box;
       display: -webkit-flex;
@@ -104,8 +106,6 @@
               align-items: center;
       padding-left: 1.2rem;
       height: 35px;
-      margin-bottom: 10px;
+      margin-bottom: 0.8rem;
       border-radius: 5px;
       background: #F1F1F1; }
-    .docs-section--grid .grid-last {
-      margin-bottom: 2.4rem; }

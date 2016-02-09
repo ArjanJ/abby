@@ -20,13 +20,16 @@ td,
 th,
 .th {
 	text-align: left;
-	background: white;
 }
 
 tr,
 .tr {
 
 	&:nth-child(odd) {
-		background: $light-grey;
+
+		td,
+		.td {
+			background: $light-grey;
+		}
 	}
 }
