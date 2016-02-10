@@ -77,13 +77,3 @@ small {
 .underline {
   text-decoration: underline;
 }
-
-/**
- * FONT SIZE UTILITY CLASSES
- */
-
-@for $i from 1 through length($font-sizes) {
-  .u-font-#{$i} {
-    font-size: nth($font-sizes, $i);
-  }
-}

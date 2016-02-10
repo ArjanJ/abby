@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #UTILITIES
+\*------------------------------------*/
+
+/**
+ * CLEARFIX
+ */
+
+.u-clearfix {
+	@include clearfix;
+}
+
+/**
+ * FONT-SIZES
+ */
+
+@for $i from 1 through length($font-sizes) {
+	
+  .u-font-#{$i} {
+    font-size: nth($font-sizes, $i);
+  }
+}
