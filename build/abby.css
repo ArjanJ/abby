@@ -144,27 +144,27 @@ h1 {
 
 h2 {
   font-size: 3.374rem;
-  margin-bottom: 1.92rem;
+  margin-bottom: 1.2rem;
   line-height: 1.1; }
 
 h3 {
   font-size: 2.25rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.8rem;
   line-height: 1.2; }
 
 h4 {
   font-size: 1.5rem;
-  margin-bottom: 1.37143rem;
+  margin-bottom: 0.6rem;
   line-height: 1.3; }
 
 h5 {
   font-size: 1.25rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.48rem;
   line-height: 1.4; }
 
 h6 {
   font-size: 1rem;
-  margin-bottom: 1.06667rem;
+  margin-bottom: 0.4rem;
   line-height: 1.5; }
 
 small {
@@ -172,6 +172,42 @@ small {
 
 .underline {
   text-decoration: underline; }
+
+/**
+ * FONT SIZE UTILITY CLASSES
+ */
+.u-font-1 {
+  font-size: 7.594rem; }
+
+.u-font-2 {
+  font-size: 6.328rem; }
+
+.u-font-3 {
+  font-size: 5.062rem; }
+
+.u-font-4 {
+  font-size: 4.218rem; }
+
+.u-font-5 {
+  font-size: 3.374rem; }
+
+.u-font-6 {
+  font-size: 2.812rem; }
+
+.u-font-7 {
+  font-size: 2.25rem; }
+
+.u-font-8 {
+  font-size: 1.875rem; }
+
+.u-font-9 {
+  font-size: 1.5rem; }
+
+.u-font-10 {
+  font-size: 1.25rem; }
+
+.u-font-11 {
+  font-size: 1rem; }
 
 /*------------------------------------*		#GRID
 \*------------------------------------*/

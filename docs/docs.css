@@ -49,10 +49,6 @@
     height: 4.8rem;
     background: #FAFAFA; }
   .docs-nav {
-    -webkit-box-flex: 2;
-    -webkit-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
     text-align: center;
     white-space: nowrap;
     overflow-x: scroll; }
@@ -77,6 +73,8 @@
     padding: 7.2rem 0 2.4rem;
     text-align: center;
     background: #FAFAFA; }
+    .docs-intro__wrapper {
+      padding: 0 2.4rem; }
     .docs-intro__heading {
       font-size: 6.328rem; }
     .docs-intro__subheading {

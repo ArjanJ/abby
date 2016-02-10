@@ -42,31 +42,31 @@ h1 {
 
 h2 {
   font-size: $font-size-h2;
-  margin-bottom: ($base-space / 1.25);
+  margin-bottom: ($base-space / 2);
   line-height: 1.1;
 }
 
 h3 {
   font-size: $font-size-h3;
-  margin-bottom: ($base-space / 1.5);
+  margin-bottom: ($base-space / 3);
   line-height: 1.2;
 }
 
 h4 {
   font-size: $font-size-h4;
-  margin-bottom: ($base-space / 1.75);
+  margin-bottom: ($base-space / 4);
   line-height: 1.3;
 }
 
 h5 {
   font-size: $font-size-h5;
-  margin-bottom: ($base-space / 2);
+  margin-bottom: ($base-space / 5);
   line-height: 1.4;
 }
 
 h6 {
   font-size: $font-size-h6;
-  margin-bottom: ($base-space / 2.25);
+  margin-bottom: ($base-space / 6);
   line-height: 1.5;
 }
 
@@ -76,4 +76,14 @@ small {
 
 .underline {
   text-decoration: underline;
+}
+
+/**
+ * FONT SIZE UTILITY CLASSES
+ */
+
+@for $i from 1 through length($font-sizes) {
+  .u-font-#{$i} {
+    font-size: nth($font-sizes, $i);
+  }
 }
