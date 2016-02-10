@@ -1,8 +1,5 @@
-/**
- *
- * ABBY
- *
- */
+/*------------------------------------*		#ABBY
+\*------------------------------------*/
 /*------------------------------------*		#VARIABLES
 \*------------------------------------*/
 /**
@@ -26,9 +23,16 @@
 /**
  * COLORS
  */
+/**
+ * TRANSITIONS
+ */
 /*------------------------------------*		#MIXINS
 \*------------------------------------*/
 /*------------------------------------*		#MIXINS / BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*		#MIXINS / BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*    #MIXINS - TRANSITIONS
 \*------------------------------------*/
 /*------------------------------------*		#BASE
 \*------------------------------------*/
@@ -172,42 +176,6 @@ small {
 
 .underline {
   text-decoration: underline; }
-
-/**
- * FONT SIZE UTILITY CLASSES
- */
-.u-font-1 {
-  font-size: 7.594rem; }
-
-.u-font-2 {
-  font-size: 6.328rem; }
-
-.u-font-3 {
-  font-size: 5.062rem; }
-
-.u-font-4 {
-  font-size: 4.218rem; }
-
-.u-font-5 {
-  font-size: 3.374rem; }
-
-.u-font-6 {
-  font-size: 2.812rem; }
-
-.u-font-7 {
-  font-size: 2.25rem; }
-
-.u-font-8 {
-  font-size: 1.875rem; }
-
-.u-font-9 {
-  font-size: 1.5rem; }
-
-.u-font-10 {
-  font-size: 1.25rem; }
-
-.u-font-11 {
-  font-size: 1rem; }
 
 /*------------------------------------*		#GRID
 \*------------------------------------*/
@@ -419,5 +387,53 @@ code {
   background: #F1F1F1;
   font-size: 1.5rem;
   color: #212121; }
+
+/*------------------------------------*    #UTILITIES
+\*------------------------------------*/
+/**
+ * CLEARFIX
+ */
+.u-clearfix:before, .u-clearfix:after {
+  content: "";
+  display: table; }
+
+.u-clearfix:after {
+  clear: both; }
+
+/**
+ * FONT-SIZES
+ */
+.u-font-1 {
+  font-size: 7.594rem; }
+
+.u-font-2 {
+  font-size: 6.328rem; }
+
+.u-font-3 {
+  font-size: 5.062rem; }
+
+.u-font-4 {
+  font-size: 4.218rem; }
+
+.u-font-5 {
+  font-size: 3.374rem; }
+
+.u-font-6 {
+  font-size: 2.812rem; }
+
+.u-font-7 {
+  font-size: 2.25rem; }
+
+.u-font-8 {
+  font-size: 1.875rem; }
+
+.u-font-9 {
+  font-size: 1.5rem; }
+
+.u-font-10 {
+  font-size: 1.25rem; }
+
+.u-font-11 {
+  font-size: 1rem; }
 
 /*# sourceMappingURL=abby.css.map */

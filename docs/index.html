@@ -74,7 +74,7 @@
  						This is what <span class="underline">underlined text</span> looks like.<br>
  						This is what <small>small text</small> looks like.
  					</p>
-
+          <p>Example Markup:</p>
  					<pre><code>&lt;p&gt;This is what &lt;strong&gt;bold text&lt;/strong&gt; looks like.&lt;/p&gt;
 &lt;p&gt;This is what &lt;em&gt;italicized text&lt;/em&gt; looks like.&lt;/p&gt;
 &lt;p&gt;This is what &lt;span class="underline"&gt;underlined text&lt;/span&gt; looks like.&lt;/p&gt;
@@ -135,6 +135,8 @@
 		  			</div>
 		  		</div>
 
+          <p>Example Markup:</p>
+
 		  		<pre><code>&lt;div class="grid"&gt;
   &lt;div class="grid__col"&gt;
   &lt;div class="grid__col"&gt;
@@ -143,59 +145,40 @@
 		  		<h2>Modifier Classes</h2>
 		  		<p>In order to have columns that are larger than others in the same "row" we need some modifier classes to change the <code>flex-grow</code> property. The class <code>grid__col--3</code> means make this element 3x as large as the other elements in the same "flexed" box. Within Abby there are six modifier classes available for the <code>grid__col</code> class.</p>
 
-		  		<div class="grid">
-		  			<div class="grid__col grid__col--6">
-		  				<code>.grid__col .grid__col--6</code>
-		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
-		  			</div>
-		  		</div>
-
-		  		<div class="grid">
-		  			<div class="grid__col grid__col--5">
-		  				<code>.grid__col .grid__col--5</code>
-		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
-		  			</div>
-		  		</div>
-
-		  		<div class="grid">
-		  			<div class="grid__col grid__col--4">
-		  				<code>.grid__col .grid__col--4</code>
-		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
-		  			</div>
-		  		</div>
-
-		  		<div class="grid">
-		  			<div class="grid__col grid__col--3">
-		  				<code>.grid__col .grid__col--3</code>
-		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
-		  			</div>
-		  		</div>
-
-		  		<div class="grid">
-		  			<div class="grid__col grid__col--2">
-		  				<code>.grid__col .grid__col--2</code>
-		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
-		  			</div>
-		  		</div>
-
-		  		<div class="grid grid-last">
-		  			<div class="grid__col grid__col--1">
-		  				<code>.grid__col .grid__col--1</code>
-		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
-		  			</div>
-		  		</div>
+          <table>
+            <thead>
+              <tr>
+                <th>Modifier Class Name</th>
+                <th>Flex-grow Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>grid__col--6</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>grid__col--5</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>grid__col--4</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>grid__col--3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>grid__col--2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>grid__col--1</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
 
 		  		<h2>Gutters</h2>
 		  		<p>Abby has customizable gutters. By default the grid gutters are set to <code>0.8rem</code>. This can be changed in <code>/src/_variables.scss</code>.</p>
@@ -238,6 +221,8 @@
  					  </fieldset>
  					  <button type="submit">Submit</button>
  					</form>
+
+          <p>Example Markup:</p>
 
  					<pre><code>&lt;form&gt;
   &lt;fieldset&gt;
@@ -284,6 +269,8 @@
  					<input type="button" value="Button Input">
  					<input type="submit" value="Submit Input">
 
+          <p>Example Markup:</p>
+
           <pre><code>&lt;button type="button">Button Element&lt;/button&gt;
 &lt;a href="" class="button"&gt;Anchor Button&lt;/a&gt;
 &lt;input type="button" value="Button Input"&gt;
@@ -303,6 +290,8 @@
  					  <li>List item 3</li>
  					  <li>List item 4</li>
  					</ul>
+
+          <p>Example Markup:</p>
 
           <pre><code>&lt;ul&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
@@ -349,7 +338,7 @@
  					    </tr>
  					  </tbody>
  					</table>
-
+          <p>Example Markup:</p>
           <pre><code>&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -392,7 +381,7 @@
 }</code></pre>
 
   				<p><code>This is some inline code</code> within a paragraph.</p>
-
+          <p>Example Markup:</p>
           <pre><code>&lt;pre&gt;&lt;code&gt;&lt;span&gt;&lt;h1&gt;Heading 1&lt;/h1&gt;&lt;/span&gt;
 &lt;span&gt;&lt;h2&gt;Heading 2&lt;/h2&gt;&lt;/span&gt;
 
@@ -481,6 +470,19 @@
   }
 }</code></pre>
 
+        <h3>Clearfix</h3>
+        <p>To clearfix an element you can use <code>@include clearfix</code> in your stylesheet, or you can apply the <code>clearfix</code> class in your HTML.</p>
+
+        <h3>Transitions</h3>
+        <p>Abby includes a mixin to help with the <code>transition</code> property. Simply specify the easing type ('in', 'out', 'in-out') and the speed. The defaults can be changed in <code>src/_variables.scss</code>.</p>
+       
+        <p>Example:</p>
+        <pre><code>.element {
+  @include ease('in', 0.5);
+  color: red;
+}</code></pre>
+        
+        <h2>Helper Classes</h2>
         <h3>Font Sizes</h3>
         <p>Having CSS classes for different font-sizes is always handy. Here's a list of all the available utility classes to change the font-size of an element.</p>
 
