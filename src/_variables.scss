@@ -9,40 +9,19 @@
 
 $font-size-root: 				0.625rem;
 $line-height-base: 			1.6;
-$line-height-headings: 	1.1;
 
-$font-size-1: 	7.594rem;
-$font-size-2: 	6.328rem;
-$font-size-3: 	5.062rem;
-$font-size-4: 	4.218rem;
-$font-size-5: 	3.374rem;
-$font-size-6: 	2.812rem;
-$font-size-7: 	2.250rem;
-$font-size-8: 	1.875rem;
-$font-size-9: 	1.500rem;
-$font-size-10: 	1.250rem;
-$font-size-11:	1.00rem;
+$font-size-body: 1.5rem;
 
-$font-size-body: $font-size-9;
+$heading-sizes: (
+	1: 5.062rem,
+	2: 4.218rem,
+	3: 3.374rem,
+	4: 2.812rem,
+	5: 2.250rem,
+	6: 1.875rem
+);
 
-$font-size-h1: $font-size-3;
-$font-size-h2: $font-size-5;
-$font-size-h3: $font-size-7;
-$font-size-h4: $font-size-9;
-$font-size-h5: $font-size-10;
-$font-size-h6: $font-size-11;
-
-$font-sizes: 	$font-size-1,
-							$font-size-2,
-							$font-size-3,
-							$font-size-4,
-							$font-size-5,
-							$font-size-6,
-							$font-size-7,
-							$font-size-8,
-							$font-size-9,
-							$font-size-10,
-							$font-size-11;
+$font-size-code: 1.25rem;
 
 /**
  * FONT WEIGHTS
@@ -68,11 +47,13 @@ $base-space: ($line-height-base) * ($font-size-body);
  * BREAKPOINTS
  */
 
-$bp-xsmall: 	480px;
-$bp-small: 		640px;
-$bp-medium: 	768px;
-$bp-large: 		960px;
-$bp-xlarge: 	1100px;
+$breakpoints: (
+	xsmall: 	480px,
+	small: 		640px,
+	medium: 	768px,
+	large: 		960px,
+	xlarge: 	1200px
+);
 
 /**
  * GRID
@@ -84,24 +65,26 @@ $grid-gutter: ($base-space / 3);
  * COLORS
  */
 
-$black: 			#212121;
-$dark-grey: 	#424242;
-$mid-grey: 		#BDBDBD;
-$light-grey: 	#F1F1F1;
-$white: 			#FAFAFA;
-$red: 				#F44336;
-$pink: 				#E91E63;
-$purple: 			#E91E63;
-$indigo: 			#3F51B5;
-$blue: 				#2196F3;
-$cyan: 				#00BCD4;
-$green: 			#4CAF50;
-$yellow: 			#FFEB3B;
-$orange: 			#FF9800;
-$brown: 			#795548;
+$colors: 	(
+	black: 				#212121,
+	dark-grey: 		#424242,
+	mid-grey: 		#BDBDBD,
+	light-grey: 	#F1F1F1,
+	white: 				#FAFAFA,
+	red: 					#F44336,
+	pink: 				#E91E63,
+	purple: 			#9C27B0,
+	indigo: 			#3F51B5,
+	blue: 				#2196F3,
+	cyan: 				#00BCD4,
+	green: 				#4CAF50,
+	yellow: 			#FFEB3B,
+	orange: 			#FF9800,
+	brown: 				#795548
+);
 
-$headings-color: 	$black;
-$text-color: 			$black;
+$headings-color: 	map-get($colors, black);
+$text-color: 			map-get($colors, black);
 
 /**
  * TRANSITIONS

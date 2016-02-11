@@ -17,7 +17,7 @@
 		}
 	}
 
-	@include bp-small {
+	@include bp(small) {
 		display: flex;
 		flex-wrap: no-wrap;
 

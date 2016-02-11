@@ -17,10 +17,10 @@ button,
 	white-space: nowrap;
 	cursor: pointer;
 	line-height: inherit;
-	font-size: $font-size-9;
+	font-size: $font-size-body;
 	letter-spacing: .2px;
 	color: $text-color;
-	background: $light-grey;
+	background: color(light-grey);
 
 	&:focus {
 		outline: none;

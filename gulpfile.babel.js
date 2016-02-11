@@ -2,9 +2,9 @@
 
 import autoprefixer from 'autoprefixer';
 import browserSync from 'browser-sync';
+import cssnano from 'gulp-cssnano';
 import ghPages from 'gulp-gh-pages';
 import gulp from 'gulp';
-import minifyCSS from 'gulp-minify-css';
 import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 import sass from 'gulp-sass';
@@ -63,6 +63,7 @@ function styles() {
 			autoprefixer()			
 		]))
 		.pipe(rename('abby.css'))
+		.pipe(cssnano())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest(paths.css.build))
 		.pipe(bs.stream());

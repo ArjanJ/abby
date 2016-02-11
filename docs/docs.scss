@@ -1,10 +1,9 @@
 @import "../src/variables";
 @import "../src/mixins/mixins";
-
-$header-height: 4.8rem;
+@import "../src/functions";
 
 .docs {
-	background: $white;
+	background: color(white);
 
 	&-header {
 		display: flex;
@@ -16,8 +15,7 @@ $header-height: 4.8rem;
 		width: 100%;
 		padding: (0) ($base-space / 2);
 		z-index: 10;
-		height: $header-height;
-		background: $white;
+		background: color(white);
 	}
 
 	&-content {
@@ -43,7 +41,7 @@ $header-height: 4.8rem;
 		min-height: 100vh;
 		padding: ($header-height + $base-space) (0) ($base-space);
 		text-align: center;
-		background: $white;
+		background: color(white);
 
 		&__wrapper {
 			padding: 0 $base-space;
@@ -58,15 +56,15 @@ $header-height: 4.8rem;
 		}
 
 		&__dl-btn {
-			color: $white;
-			background: $green;
+			color: color(white);
+			background: color(green);
 		}
 
 		code {
 			display: inline-block;
 			padding: ($base-space / 4) ($base-space);
 			background: #2b303b;
-			color: $white;
+			color: color(white);
 		}
 	}
 
@@ -88,7 +86,7 @@ $header-height: 4.8rem;
 				height: 35px;
 				margin-bottom: $grid-gutter;
 				border-radius: 5px;
-				background: $light-grey;
+				background: color(light-grey);
 			}
 		}
 	}

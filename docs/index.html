@@ -142,8 +142,8 @@
   &lt;div class="grid__col"&gt;
 &lt;/div&gt;</code></pre>
 
-		  		<h2>Modifier Classes</h2>
-		  		<p>In order to have columns that are larger than others in the same "row" we need some modifier classes to change the <code>flex-grow</code> property. The class <code>grid__col--3</code> means make this element 3x as large as the other elements in the same "flexed" box. Within Abby there are six modifier classes available for the <code>grid__col</code> class.</p>
+		  		<h2 class="u-font-3">Modifier Classes</h2>
+		  		<p>In order to have columns that are larger than others in the same "row" we need some modifier classes to change the <code>flex-grow</code> property. The class <code>grid__col--3</code> means make this element 3x as wide as the other columns in the same "flexed" box. Within Abby there are six modifier classes available for the <code>grid__col</code> class.</p>
 
           <table>
             <thead>
@@ -180,7 +180,7 @@
             </tbody>
           </table>
 
-		  		<h2>Gutters</h2>
+		  		<h2 class="u-font-3">Gutters</h2>
 		  		<p>Abby has customizable gutters. By default the grid gutters are set to <code>0.8rem</code>. This can be changed in <code>/src/_variables.scss</code>.</p>
  				</section>
 
@@ -398,82 +398,54 @@
         <h1>Utilities</h1>
         <p>Abby comes with a few utilies that can help speed things up when starting a project. Some features are only available to use with SCSS, which is recommended.</p>
 
-        <h2>Mixins</h2>
-        <h3>Breakpoints</h3>
+        <h2 class="u-font-3">Mixins</h2>
+        <h3 class="u-font-5">Breakpoints</h3>
         <p>Abby provides some media query mixins to helpout with responsive design. These are the default breakpoints, which are configurable in <code>src/_variables.scss</code>.</p>
 
         <table>
           <thead>
             <tr>
-              <th>Variable Name</th>
+              <th>Key Name</th>
               <th>Value (px)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>$bp-xsmall</td>
+              <td>xsmall</td>
               <td>480</td>
             </tr>
             <tr>
-              <td>$bp-small</td>
+              <td>small</td>
               <td>640</td>
             </tr>
             <tr>
-              <td>$bp-medium</td>
+              <td>medium</td>
               <td>768</td>
             </tr>
             <tr>
-              <td>$bp-large</td>
+              <td>large</td>
               <td>960</td>
             </tr>
             <tr>
-              <td>$bp-xlarge</td>
+              <td>xlarge</td>
               <td>1100</td>
             </tr>
           </tbody>
         </table>
 
-        <p>The mixins for each breakpoint are as follows.</p>
-        <pre><code>@mixin bp-custom($width) {
-  @media screen and (min-width: $width) {
-    @content;
-  }
-}
+        <p>Example use:</p>
+        <pre><code>.element {
+  color: blue;
 
-@mixin bp-xsmall {
-  @media screen and (min-width: $bp-xsmall) {
-    @content;
-  }
-}
-
-@mixin bp-small {
-  @media screen and (min-width: $bp-small) {
-    @content;
-  }
-}
-
-@mixin bp-medium {
-  @media screen and (min-width: $bp-medium) {
-    @content;
-  }
-}
-
-@mixin bp-large {
-  @media screen and (min-width: $bp-large) {
-    @content;
-  }
-}
-
-@mixin bp-xlarge {
-  @media screen and (min-width: $bp-xlarge) {
-    @content;
+  @include bp(small) {
+    color: red;
   }
 }</code></pre>
 
-        <h3>Clearfix</h3>
+        <h3 class="u-font-5">Clearfix</h3>
         <p>To clearfix an element you can use <code>@include clearfix</code> in your stylesheet, or you can apply the <code>clearfix</code> class in your HTML.</p>
 
-        <h3>Transitions</h3>
+        <h3 class="u-font-5">Transitions</h3>
         <p>Abby includes a mixin to help with the <code>transition</code> property. Simply specify the easing type ('in', 'out', 'in-out') and the speed. The defaults can be changed in <code>src/_variables.scss</code>.</p>
        
         <p>Example:</p>
@@ -482,9 +454,8 @@
   color: red;
 }</code></pre>
         
-        <h2>Helper Classes</h2>
-        <h3>Font Sizes</h3>
-        <p>Having CSS classes for different font-sizes is always handy. Here's a list of all the available utility classes to change the font-size of an element.</p>
+        <h2 class="u-font-3">Helper Classes</h2>
+        <h3 class="u-font-5">Font Sizes</h3>
 
         <table>
           <thead>
@@ -533,8 +504,81 @@
           </tbody>
         </table>
 
+        <h3 class="u-font-5">Background Colors</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Class Name</th>
+              <th>Value (rem)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>u-bg-black</td>
+              <td class="u-bg-black"></td>
+            </tr>
+            <tr>
+              <td>u-bg-dark-grey</td>
+              <td class="u-bg-dark-grey"></td>
+            </tr>
+            <tr>
+              <td>u-bg-mid-grey</td>
+              <td class="u-bg-mid-grey"></td>
+            </tr>
+            <tr>
+              <td>u-bg-light-grey</td>
+              <td class="u-bg-light-grey"></td>
+            </tr>
+            <tr>
+              <td>u-bg-white</td>
+              <td class="u-bg-white"></td>
+            </tr>
+            <tr>
+              <td>u-bg-red</td>
+              <td class="u-bg-red"></td>
+            </tr>
+            <tr>
+              <td>u-bg-pink</td>
+              <td class="u-bg-pink"></td>
+            </tr>
+            <tr>
+              <td>u-bg-purple</td>
+              <td class="u-bg-purple"></td>
+            </tr>
+            <tr>
+              <td>u-bg-indigo</td>
+              <td class="u-bg-indigo"></td>
+            </tr>
+            <tr>
+              <td>u-bg-blue</td>
+              <td class="u-bg-blue"></td>
+            </tr>
+            <tr>
+              <td>u-bg-cyan</td>
+              <td class="u-bg-cyan"></td>
+            </tr>
+            <tr>
+              <td>u-bg-green</td>
+              <td class="u-bg-green"></td>
+            </tr>
+            <tr>
+              <td>u-bg-yellow</td>
+              <td class="u-bg-yellow"></td>
+            </tr>
+            <tr>
+              <td>u-bg-orange</td>
+              <td class="u-bg-orange"></td>
+            </tr>
+            <tr>
+              <td>u-bg-brown</td>
+              <td class="u-bg-brown"></td>
+            </tr>
+          </tbody>
+        </table>
+
         <p>Example:</p>
-        <pre><code>&lt;h1 class="u-font-4"&gt;Hello, world!&lt;/h1&gt;</code></pre>
+        <pre><code>&lt;div class="u-bg-red"&gt;&lt;/div&gt;</code></pre>
       </section>
 
  		</main>

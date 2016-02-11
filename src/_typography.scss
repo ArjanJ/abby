@@ -27,47 +27,40 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: $base-space;
-  line-height: $line-height-headings;
+  line-height: 1.15;
   font-weight: $font-weight-headings;
   font-family: $font-headings;
   color: $headings-color;
-  line-height: 1.15;
 }
 
 h1 {
-  font-size: $font-size-h1;
-  line-height: 1;
+  font-size: map-get($heading-sizes, 1);
+  margin-bottom: $base-space;
 }
 
 h2 {
-  font-size: $font-size-h2;
-  margin-bottom: ($base-space / 2);
-  line-height: 1.1;
+  font-size: map-get($heading-sizes, 2);
+  margin-bottom: ($base-space / 1.5);
 }
 
 h3 {
-  font-size: $font-size-h3;
-  margin-bottom: ($base-space / 3);
-  line-height: 1.2;
+  font-size: map-get($heading-sizes, 3);
+  margin-bottom: ($base-space / 1.875);
 }
 
 h4 {
-  font-size: $font-size-h4;
-  margin-bottom: ($base-space / 4);
-  line-height: 1.3;
+  font-size: map-get($heading-sizes, 4);
+  margin-bottom: ($base-space / 3.374);
 }
 
 h5 {
-  font-size: $font-size-h5;
-  margin-bottom: ($base-space / 5);
-  line-height: 1.4;
+  font-size: map-get($heading-sizes, 5);
+  margin-bottom: ($base-space / 4.218);
 }
 
 h6 {
-  font-size: $font-size-h6;
-  margin-bottom: ($base-space / 6);
-  line-height: 1.5;
+  font-size: map-get($heading-sizes, 6);
+  margin-bottom: ($base-space / 5.062);
 }
 
 small {

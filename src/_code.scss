@@ -11,14 +11,14 @@ pre > code {
 	margin-bottom: $base-space;
   white-space: pre;
   padding: ($base-space / 1.5);
-  font-size: $font-size-10;
+  font-size: $font-size-code;
 }
 
 code {
 	padding: ($base-space / 6);
 	border-radius: 5px;
   word-wrap: break-word;
-  background: $light-grey;
-  font-size: $font-size-9;
+  background: color(light-grey);
+  font-size: $font-size-body;
   color: $text-color;
 }

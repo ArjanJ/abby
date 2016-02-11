@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #UTILITIES
+		#UTILITIES
 \*------------------------------------*/
 
 /**
@@ -14,9 +14,23 @@
  * FONT-SIZES
  */
 
-@for $i from 1 through length($font-sizes) {
-	
-  .u-font-#{$i} {
-    font-size: nth($font-sizes, $i);
-  }
+@each $key, $value in $heading-sizes {
+
+	.u-font-#{$key},
+	%u-font-#{$key} {
+		font-size: $value;
+		line-height: 1.15;
+		margin-bottom: ($base-space / $key);
+	}
+}
+
+/**
+ * BACKGROUND-COLOR
+ */
+
+@each $key, $value in $colors {
+
+	.u-bg-#{$key} {
+		background-color: $value !important;
+	}
 }

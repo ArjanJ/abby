@@ -8,32 +8,12 @@
 	}
 }
 
-@mixin bp-xsmall {
-	@media screen and (min-width: $bp-xsmall) {
-		@content;
-	}
-}
-
-@mixin bp-small {
-	@media screen and (min-width: $bp-small) {
-		@content;
-	}
-}
-
-@mixin bp-medium {
-	@media screen and (min-width: $bp-medium) {
-		@content;
-	}
-}
-
-@mixin bp-large {
-	@media screen and (min-width: $bp-large) {
-		@content;
-	}
-}
-
-@mixin bp-xlarge {
-	@media screen and (min-width: $bp-xlarge) {
-		@content;
-	}
+@mixin bp($bp) {
+	@if map-has-key($breakpoints, $bp) {
+		@media (min-width: #{map-get($breakpoints, $bp)}) {
+      @content;
+    }
+	} @else {
+    @warn "No value could be retrieved from `#{$bp}`." + "Please make sure it is defined in `$breakpoints` map.";
+  }
 }
