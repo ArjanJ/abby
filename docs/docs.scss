@@ -1,28 +1,41 @@
-@import "../src/variables";
-@import "../src/mixins/mixins";
-@import "../src/functions";
-@import "../src/utilities";
+@import "../src/abby";
 
-$header-height: 4.8rem;
+$header-height: 7.2rem;
+$navy: #311D3F;
+$red: #E23E57;
+
+body {
+	background: color(white);
+}
 
 .docs {
-	background: color(white);
 
 	&-header {
-		display: none;
-		justify-content: space-between;
+		display: flex;
+		justify-content: center;
 		align-items: center;
-		position: fixed;
-		top: 0;
+		margin-bottom: ($base-space);
 		left: 0;
 		width: 100%;
 		padding: (0) ($base-space / 2);
 		z-index: 10;
 		background: color(white);
+		@include ease();
+
+		&--fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
 	}
 
-	&-content {
+	&-header-spacer {
+		display: none;
+		height: $header-height;
 
+		&--active {
+			display: block;
+		}
 	}
 
 	&-nav {
@@ -32,8 +45,14 @@ $header-height: 4.8rem;
 
 		&__link {
 			display: inline-block;
-			padding: ($base-space / 2) ($base-space);
-			color: inherit;
+			padding: ($base-space) ($base-space);
+			color: $navy;
+			font-size: map-get($heading-sizes, 6);
+			@include ease();
+
+			&:hover {
+				color: $red;
+			}
 		}
 	}
 
@@ -49,20 +68,28 @@ $header-height: 4.8rem;
 
 		&__right {
 			background: color(light-grey);
+
+			@include bp(medium) {
+				background: transparent;
+			}
 			
 			h1 {
-				color: #311D3F;
+				color: $navy;
 			}
 		}
 
 		&__wrapper {
 			max-width: 700px;
 			margin: 0 auto;
-			padding: 0 ($base-space * 1.5);
+			padding: 0 ($base-space);
+
+			@include bp(medium) {
+				padding: 0 ($base-space * 1.5);
+			}
 		}
 
 		&__heading {
-			color: #311D3F;
+			color: $navy;
 			font-size: 6.327rem;
 		}
 
@@ -72,13 +99,13 @@ $header-height: 4.8rem;
 
 		&__dl-btn {
 			color: color(white);
-			background: #E23E57;
+			background: $red;
 		}
 
 		code {
 			display: inline-block;
-			padding: ($base-space / 4) ($base-space);
-			background: #311D3F;
+			padding: ($base-space / 4) ($base-space / 1.5);
+			background: $navy;
 			color: color(white);
 		}
 
@@ -86,7 +113,7 @@ $header-height: 4.8rem;
 			vertical-align: middle !important;
 		}
 
-		@include bp(medium) {
+		@include bp(large) {
 			display: flex;
 
 			&__left,
@@ -102,8 +129,37 @@ $header-height: 4.8rem;
 
 	&-section {
 		max-width: 740px;
-		margin: ($base-space * 3) (auto);
-		padding: (0) ($base-space * 2);
+		margin: ($base-space * 2) (auto);
+		padding: (0) ($base-space);
+
+		&__heading {
+			text-align: center;
+			position: relative;
+			color: $navy;
+			padding: ($base-space) (0);
+			font-size: map-get($heading-sizes, 3);
+			margin-bottom: ($base-space * 3);
+
+			&:before,
+			&:after {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 3px;
+				position: absolute;
+				left: 0;
+				background: $red;
+				transform: scaleX(0.03);
+			}
+
+			&:before {
+				top: 0;
+			}
+
+			&:after {
+				bottom: 0;
+			}
+		}
 
 		.grid-last {
 			margin-bottom: $base-space;
