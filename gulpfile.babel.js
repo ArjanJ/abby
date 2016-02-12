@@ -24,7 +24,7 @@ const paths = {
 		build: `${dirs.build}`,
 		docs: './docs/*.scss'
 	},
-	deploy: `${dirs.build}/**/*`
+	deploy: `${dirs.docs}/**/*`
 };
 
 gulp.task('default', ['serve', 'watch', 'styles', 'docStyles']);

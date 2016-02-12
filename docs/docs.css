@@ -231,8 +231,14 @@ small {
 
 /*------------------------------------*		#LIST
 \*------------------------------------*/
-ul {
-  margin: 0 0 2.4rem 1.5rem; }
+ul,
+ol {
+  margin: 0 0 2.4rem; }
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+    margin-left: 1.6rem; }
 
 li {
   margin-bottom: 0.8rem; }
@@ -500,7 +506,7 @@ body {
   width: 100%;
   padding: 0 1.2rem;
   z-index: 10;
-  background: #FAFAFA;
+  background: rgba(250, 250, 250, 0.75);
   -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1); }
   .docs-header--fixed {
@@ -520,20 +526,23 @@ body {
   overflow-x: scroll; }
   .docs-nav__link {
     display: inline-block;
-    padding: 2.4rem 2.4rem;
+    padding: 2.4rem 1.2rem;
     color: #311D3F;
-    font-size: 1.875rem;
     -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1); }
     .docs-nav__link:hover {
       color: #E23E57; }
+  @media (min-width: 768px) {
+    .docs-nav__link {
+      font-size: 1.875rem;
+      padding: 2.4rem; } }
 
 .docs-intro {
   display: block;
   min-height: 100vh;
   background: #FAFAFA; }
   .docs-intro__left, .docs-intro__right {
-    padding: 7.2rem 0; }
+    padding: 3.6rem 0; }
   .docs-intro__right {
     background: #F1F1F1; }
     @media (min-width: 768px) {
@@ -590,15 +599,20 @@ body {
 
 .docs-section {
   max-width: 740px;
-  margin: 4.8rem auto;
+  margin: 2.4rem auto;
   padding: 0 2.4rem; }
+  .docs-section:before, .docs-section:after {
+    content: "";
+    display: table; }
+  .docs-section:after {
+    clear: both; }
   .docs-section__heading {
     text-align: center;
     position: relative;
     color: #311D3F;
     padding: 2.4rem 0;
     font-size: 3.374rem;
-    margin-bottom: 7.2rem; }
+    margin-bottom: 3.6rem; }
     .docs-section__heading:before, .docs-section__heading:after {
       content: "";
       display: block;
@@ -615,6 +629,11 @@ body {
       bottom: 0; }
   .docs-section .grid-last {
     margin-bottom: 2.4rem; }
+  .docs-section--typography .grid__col:first-of-type {
+    margin-bottom: 2.4rem; }
+  @media (min-width: 768px) {
+    .docs-section--typography .grid__col:first-of-type {
+      margin-bottom: 0; } }
   .docs-section--grid .grid__col {
     display: -webkit-box;
     display: -webkit-flex;
@@ -629,3 +648,8 @@ body {
     margin-bottom: 0.8rem;
     border-radius: 5px;
     background: #F1F1F1; }
+  @media (min-width: 768px) {
+    .docs-section {
+      margin: 4.8rem auto; }
+      .docs-section__heading {
+        margin-bottom: 7.2rem; } }

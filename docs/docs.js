@@ -6,9 +6,12 @@
   var originalOffsetTop = undefined;
 
   document.addEventListener('DOMContentLoaded', handleLoad);
-
   window.addEventListener('scroll', handleScroll);
   window.addEventListener('resize', handleLoad);
+
+  header.addEventListener('click', function() {
+    console.log(originalOffsetTop);
+  });
 
   function handleScroll() {
 
@@ -27,7 +30,9 @@
 
   function handleLoad() {
     var headerOffset = header.getBoundingClientRect();
-    originalOffsetTop = headerOffset.top;
+
+    if (!header.classList.contains('docs-header--fixed'))
+      originalOffsetTop = headerOffset.top;
 
     if (window.pageYOffset < originalOffsetTop && header.classList.contains('docs-header--fixed')) {
       header.classList.remove('docs-header--fixed');

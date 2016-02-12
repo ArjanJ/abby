@@ -2,8 +2,14 @@
 		#LIST
 \*------------------------------------*/
 
-ul {
-	margin: (0) (0) ($base-space) (1.5rem);
+ul,
+ol {
+	margin: (0) (0) ($base-space);
+
+	ul,
+	ol {
+		margin-left: ($base-space / 1.5);
+	}
 }
 
 li {
