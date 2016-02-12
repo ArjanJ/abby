@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abby</title>
+  <title>Lightweight HTML/CSS Boilerplate - Built with SCSS | Abby</title>
   <meta name="description" content="">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../build/abby.css">
@@ -35,18 +35,45 @@
  			<section class="docs-content">
 
  				<section class="docs-intro">
- 					<article class="docs-intro__wrapper">
- 						<h1 class="docs-intro__heading">Abby</h1>
- 						<p class="docs-intro__subheading">A lightweight CSS starter-kit, customizable with SCSS.</p>
- 						<a href="" class="button docs-intro__dl-btn">Download</a>
- 						<a href="" class="button">View on Github</a>
-						<pre><code>npm install abby</code></pre>
- 					</article>
+          <div class="docs-intro__left">
+            <div class="docs-intro__wrapper">
+              <h1 class="docs-intro__heading">Abby</h1>
+              <p class="docs-intro__subheading">A lightweight HTML/CSS bolierplate, built with SCSS.</p>
+              <p>
+                <a href="" class="button docs-intro__dl-btn">Download</a>
+                <a href="" class="button">View on Github</a>
+              </p>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/ArjanJ/abby" aria-label="Star ArjanJ/abby on GitHub">Star</a>
+              <!-- Place this tag right after the last button or just before your close body tag. -->
+              <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+              <a href="https://twitter.com/share" class="twitter-share-button"></a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              <!-- Place this tag in your head or just before your close body tag. -->
+              <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+              <!-- Place this tag where you want the +1 button to render. -->
+              <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+            </div>
+          </div>
+          <div class="docs-intro__right">
+            <div class="docs-intro__wrapper">
+              <h1>Usage</h1>
+              <h2 class="u-font-4">CSS</h2>
+              <pre><code>&lt;link rel="stylesheet" href="abby.css"&gt;</code></pre>
+              <h2 class="u-font-4">SCSS</h2>
+              <pre><code>@import "abby"</code></pre>
+              <h2 class="u-font-4">NPM</h2>
+              <pre><code>npm install abby --save-dev</code></pre>
+
+              <h2 class="u-font-5">Why use Abby?</h1>
+              <p>Abby is designed to be a lightweight, modern starting point for web projects. Abby provides simple, usable CSS that makes HTML elements a little nicer to look at. Because Abby is made with SCSS, it's super easy to customize the typography, vertical-rhythm, breakpoints, and more. It's recommend that you only use Abby on projects that only support Internet Explorer 11 and up.</p>
+            </div>
+          </div>
  				</section>
  				
  				<section class="docs-section">
  					<h1>Typography</h1>
- 					<p>Abby's typography follows a simple set of rules, all in <code>rem</code> units. To create a consistent vertical rhythm, all headings and paragraphs have the same <code>margin-bottom</code> value, which is equal to the body font size multiplied by the base line-height. The font sizes throughout Abby are calculated by following the perfect fith ratio to create a consistent and pleasing look.</p>
 					
  					<div class="grid grid-last">
  						<div class="grid__col">
@@ -142,7 +169,7 @@
   &lt;div class="grid__col"&gt;
 &lt;/div&gt;</code></pre>
 
-		  		<h2 class="u-font-3">Modifier Classes</h2>
+		  		<h2 class="u-font-4">Modifier Classes</h2>
 		  		<p>In order to have columns that are larger than others in the same "row" we need some modifier classes to change the <code>flex-grow</code> property. The class <code>grid__col--3</code> means make this element 3x as wide as the other columns in the same "flexed" box. Within Abby there are six modifier classes available for the <code>grid__col</code> class.</p>
 
           <table>
@@ -180,7 +207,7 @@
             </tbody>
           </table>
 
-		  		<h2 class="u-font-3">Gutters</h2>
+		  		<h2 class="u-font-4">Gutters</h2>
 		  		<p>Abby has customizable gutters. By default the grid gutters are set to <code>0.8rem</code>. This can be changed in <code>/src/_variables.scss</code>.</p>
  				</section>
 
@@ -226,16 +253,16 @@
 
  					<pre><code>&lt;form&gt;
   &lt;fieldset&gt;
-  	&lt;div class="grid"&gt;
-  	&lt;div class="grid__col"&gt;
-  		&lt;label for=""&gt;Name&lt;/label&gt;
-  		&lt;input type="text" placeholder="Name"&gt;
-  	&lt;/div&gt;
-    &lt;div class="grid__col"&gt;
-    	&lt;label for=""&gt;Email&lt;/label&gt;
-    	&lt;input type="email" placeholder="Email"&gt;
+    &lt;div class="grid"&gt;
+      &lt;div class="grid__col"&gt;
+    	  &lt;label for=""&gt;Name&lt;/label&gt;
+    	  &lt;input type="text" placeholder="Name"&gt;
+      &lt;/div&gt;
+      &lt;div class="grid__col"&gt;
+        &lt;label for=""&gt;Email&lt;/label&gt;
+        &lt;input type="email" placeholder="Email"&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-  	&lt;/div&gt;
     &lt;label for=""&gt;Country&lt;/label&gt;
     &lt;select name="" id=""&gt;
       &lt;option value=""&gt;Canada&lt;/option&gt;
@@ -398,7 +425,7 @@
         <h1>Utilities</h1>
         <p>Abby comes with a few utilies that can help speed things up when starting a project. Some features are only available to use with SCSS, which is recommended.</p>
 
-        <h2 class="u-font-3">Mixins</h2>
+        <h2 class="u-font-4">Mixins</h2>
         <h3 class="u-font-5">Breakpoints</h3>
         <p>Abby provides some media query mixins to helpout with responsive design. These are the default breakpoints, which are configurable in <code>src/_variables.scss</code>.</p>
 
@@ -412,7 +439,7 @@
           <tbody>
             <tr>
               <td>xsmall</td>
-              <td>480</td>
+              <td>400</td>
             </tr>
             <tr>
               <td>small</td>
@@ -428,7 +455,7 @@
             </tr>
             <tr>
               <td>xlarge</td>
-              <td>1100</td>
+              <td>1200</td>
             </tr>
           </tbody>
         </table>
@@ -454,7 +481,7 @@
   color: red;
 }</code></pre>
         
-        <h2 class="u-font-3">Helper Classes</h2>
+        <h2 class="u-font-4">Helper Classes</h2>
         <h3 class="u-font-5">Font Sizes</h3>
 
         <table>
@@ -467,39 +494,27 @@
           <tbody>
             <tr>
               <td>u-font-1</td>
-              <td>7.594</td>
-            </tr>
-            <tr>
-              <td>u-font-2</td>
-              <td>6.328</td>
-            </tr>
-            <tr>
-              <td>u-font-3</td>
               <td>5.062</td>
             </tr>
             <tr>
-              <td>u-font-4</td>
+              <td>u-font-2</td>
+              <td>4.218</td>
+            </tr>
+            <tr>
+              <td>u-font-3</td>
               <td>3.374</td>
             </tr>
             <tr>
-              <td>u-font-5</td>
+              <td>u-font-4</td>
               <td>2.812</td>
             </tr>
             <tr>
+              <td>u-font-5</td>
+              <td>2.250</td>
+            </tr>
+            <tr>
               <td>u-font-6</td>
-              <td>2.25</td>
-            </tr>
-            <tr>
-              <td>u-font-9</td>
-              <td>1.5</td>
-            </tr>
-            <tr>
-              <td>u-font-10</td>
-              <td>1.25</td>
-            </tr>
-            <tr>
-              <td>u-font-11</td>
-              <td>1.0</td>
+              <td>1.875</td>
             </tr>
           </tbody>
         </table>

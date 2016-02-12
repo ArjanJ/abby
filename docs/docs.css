@@ -37,13 +37,103 @@
 /**
  * COLORS
  */
+/*------------------------------------*		#UTILITIES
+\*------------------------------------*/
+/**
+ * CLEARFIX
+ */
+.u-clearfix:before, .u-clearfix:after {
+  content: "";
+  display: table; }
+
+.u-clearfix:after {
+  clear: both; }
+
+/**
+ * FONT-SIZES
+ */
+.u-font-1 {
+  font-size: 5.062rem;
+  line-height: 1.15;
+  margin-bottom: 2.4rem; }
+
+.u-font-2 {
+  font-size: 4.218rem;
+  line-height: 1.15;
+  margin-bottom: 1.2rem; }
+
+.u-font-3 {
+  font-size: 3.374rem;
+  line-height: 1.15;
+  margin-bottom: 0.8rem; }
+
+.u-font-4 {
+  font-size: 2.812rem;
+  line-height: 1.15;
+  margin-bottom: 0.6rem; }
+
+.u-font-5 {
+  font-size: 2.25rem;
+  line-height: 1.15;
+  margin-bottom: 0.48rem; }
+
+.u-font-6 {
+  font-size: 1.875rem;
+  line-height: 1.15;
+  margin-bottom: 0.4rem; }
+
+/**
+ * BACKGROUND-COLOR
+ */
+.u-bg-black {
+  background-color: #212121 !important; }
+
+.u-bg-dark-grey {
+  background-color: #424242 !important; }
+
+.u-bg-mid-grey {
+  background-color: #BDBDBD !important; }
+
+.u-bg-light-grey {
+  background-color: #F1F1F1 !important; }
+
+.u-bg-white {
+  background-color: #FAFAFA !important; }
+
+.u-bg-red {
+  background-color: #F44336 !important; }
+
+.u-bg-pink {
+  background-color: #E91E63 !important; }
+
+.u-bg-purple {
+  background-color: #9C27B0 !important; }
+
+.u-bg-indigo {
+  background-color: #3F51B5 !important; }
+
+.u-bg-blue {
+  background-color: #2196F3 !important; }
+
+.u-bg-cyan {
+  background-color: #00BCD4 !important; }
+
+.u-bg-green {
+  background-color: #4CAF50 !important; }
+
+.u-bg-yellow {
+  background-color: #FFEB3B !important; }
+
+.u-bg-orange {
+  background-color: #FF9800 !important; }
+
+.u-bg-brown {
+  background-color: #795548 !important; }
+
 .docs {
   background: #FAFAFA; }
   .docs-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -51,6 +141,7 @@
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
+                -ms-grid-row-align: center;
             align-items: center;
     position: fixed;
     top: 0;
@@ -58,7 +149,6 @@
     width: 100%;
     padding: 0 1.2rem;
     z-index: 10;
-    height: 4.8rem;
     background: #FAFAFA; }
   .docs-nav {
     text-align: center;
@@ -69,39 +159,61 @@
       padding: 1.2rem 2.4rem;
       color: inherit; }
   .docs-intro {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: block;
     min-height: 100vh;
-    padding: 7.2rem 0 2.4rem;
-    text-align: center;
     background: #FAFAFA; }
+    .docs-intro__left, .docs-intro__right {
+      padding: 7.2rem 0; }
+    .docs-intro__right {
+      background: #F1F1F1; }
+      .docs-intro__right h1 {
+        color: #311D3F; }
     .docs-intro__wrapper {
-      padding: 0 2.4rem; }
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 3.6rem; }
     .docs-intro__heading {
-      font-size: 6.328rem; }
+      color: #311D3F;
+      font-size: 6.327rem; }
     .docs-intro__subheading {
       font-size: 1.875rem; }
     .docs-intro__dl-btn {
       color: #FAFAFA;
-      background: #4CAF50; }
+      background: #E23E57; }
     .docs-intro code {
       display: inline-block;
       padding: 0.6rem 2.4rem;
-      background: #2b303b;
+      background: #311D3F;
       color: #FAFAFA; }
+    .docs-intro #___plusone_0 {
+      vertical-align: middle !important; }
+    @media (min-width: 768px) {
+      .docs-intro {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .docs-intro__left, .docs-intro__right {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          padding: 0; } }
   .docs-section {
     max-width: 740px;
-    margin: 0 auto 3.6rem;
+    margin: 7.2rem auto;
     padding: 0 4.8rem; }
     .docs-section .grid-last {
       margin-bottom: 2.4rem; }

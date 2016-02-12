@@ -1,12 +1,15 @@
 @import "../src/variables";
 @import "../src/mixins/mixins";
 @import "../src/functions";
+@import "../src/utilities";
+
+$header-height: 4.8rem;
 
 .docs {
 	background: color(white);
 
 	&-header {
-		display: flex;
+		display: none;
 		justify-content: space-between;
 		align-items: center;
 		position: fixed;
@@ -35,42 +38,71 @@
 	}
 
 	&-intro {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		display: block;
 		min-height: 100vh;
-		padding: ($header-height + $base-space) (0) ($base-space);
-		text-align: center;
 		background: color(white);
 
+		&__left,
+		&__right {
+			padding: ($base-space * 3) (0);
+		}
+
+		&__right {
+			background: color(light-grey);
+			
+			h1 {
+				color: #311D3F;
+			}
+		}
+
 		&__wrapper {
-			padding: 0 $base-space;
+			max-width: 700px;
+			margin: 0 auto;
+			padding: 0 ($base-space * 1.5);
 		}
 
 		&__heading {
-			font-size: $font-size-2;
+			color: #311D3F;
+			font-size: 6.327rem;
 		}
 
 		&__subheading {
-			font-size: $font-size-8;
+			font-size: map-get($heading-sizes, 6);
 		}
 
 		&__dl-btn {
 			color: color(white);
-			background: color(green);
+			background: #E23E57;
 		}
 
 		code {
 			display: inline-block;
 			padding: ($base-space / 4) ($base-space);
-			background: #2b303b;
+			background: #311D3F;
 			color: color(white);
+		}
+
+		#___plusone_0 {
+			vertical-align: middle !important;
+		}
+
+		@include bp(medium) {
+			display: flex;
+
+			&__left,
+			&__right {
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0;
+			}
 		}
 	}
 
 	&-section {
 		max-width: 740px;
-		margin: (0) (auto) ($base-space * 1.5);
+		margin: ($base-space * 3) (auto);
 		padding: (0) ($base-space * 2);
 
 		.grid-last {
