@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lightweight HTML/CSS Boilerplate - Built with SCSS | Abby</title>
+  <meta name="description" content="">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./docs.css">
+ </head>
+ <body>
+
+ 		<main class="docs">
+ 			
+ 			<section class="docs-content">
+
+ 				<section class="docs-intro">
+          <div class="docs-intro__left">
+            <div class="docs-intro__wrapper">
+              <h1 class="docs-intro__heading">Abby</h1>
+              <p class="docs-intro__subheading">A lightweight HTML/CSS boilerplate, built with SCSS.</p>
+              <p>
+                <a href="" class="button docs-intro__dl-btn">Download</a>
+                <a href="https://github.com/ArjanJ/abby" target="_blank" class="button">View on Github</a>
+              </p>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/ArjanJ/abby" aria-label="Star ArjanJ/abby on GitHub">Star</a>
+              <!-- Place this tag right after the last button or just before your close body tag. -->
+              <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+              <a href="https://twitter.com/share" class="twitter-share-button"></a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              <!-- Place this tag in your head or just before your close body tag. -->
+              <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+              <!-- Place this tag where you want the +1 button to render. -->
+              <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+            </div>
+          </div>
+          <div class="docs-intro__right">
+            <div class="docs-intro__wrapper">
+              <h1>Usage</h1>
+              <h2 class="u-font-4">CSS</h2>
+              <pre><code>&lt;link rel="stylesheet" href="abby.css"&gt;</code></pre>
+              <h2 class="u-font-4">SCSS</h2>
+              <pre><code>@import "abby"</code></pre>
+              <h2 class="u-font-4">NPM</h2>
+              <pre><code>npm install abby --save-dev</code></pre>
+
+              <h2 class="u-font-4">Why use Abby?</h1>
+              <p>Abby is designed to be a lightweight, modern starting point for web projects. Because Abby is made with SCSS, it's super easy to customize the typography, vertical-rhythm, breakpoints, without overriding anything. It's recommended that you only use Abby on projects that support Internet Explorer 11 and up.</p>
+            </div>
+          </div>
+ 				</section>
+
+        <header class="docs-header">
+          <nav class="docs-nav">
+            <a href="#typography" class="docs-nav__link">Typography</a>
+            <a href="#grids" class="docs-nav__link">Grids</a>
+            <a href="#forms" class="docs-nav__link">Forms</a>
+            <a href="#buttons" class="docs-nav__link">Buttons</a>
+            <a href="#lists" class="docs-nav__link">Lists</a>
+            <a href="#tables" class="docs-nav__link">Tables</a>
+            <a href="#code" class="docs-nav__link">Code</a>
+            <a href="#utilities" class="docs-nav__link">Utilities</a>
+          </nav>
+        </header>
+        <div class="docs-header-spacer"></div>
+ 				
+ 				<section class="docs-section docs-section--typography" id="typography">
+ 					<h1 class="docs-section__heading">Typography</h1>
+					
+ 					<div class="grid grid-last">
+ 						<div class="grid__col">
+ 							<h1>Heading 1 <code>h1</code></h1>
+ 							<h2>Heading 2 <code>h2</code></h2>
+ 							<h3>Heading 3 <code>h3</code></h3>
+ 							<h4>Heading 4 <code>h4</code></h4>
+ 							<h5>Heading 5 <code>h5</code></h5>
+ 							<h6>Heading 6 <code>h6</code></h6>
+ 						</div>
+ 						<div class="grid__col">
+ 							<pre><code><span>&lt;h1&gt;Heading 1&lt;/h1&gt;</span>
+<span>&lt;h2&gt;Heading 2&lt;/h2&gt;</span>
+<span>&lt;h3&gt;Heading 3&lt;/h3&gt;</span>
+<span>&lt;h4&gt;Heading 4&lt;/h4&gt;</span>
+<span>&lt;h5&gt;Heading 5&lt;/h5&gt;</span>
+<span>&lt;h6&gt;Heading 6&lt;/h6&gt;</span>
+</code></pre>
+ 						</div>
+ 					</div>
+
+ 					<p>
+ 						This is what <strong>bold text</strong> looks like.<br>
+ 						This is what <em>italicized text</em> looks like.<br>
+ 						This is what <span class="underline">underlined text</span> looks like.<br>
+ 						This is what <small>small text</small> looks like.
+ 					</p>
+          <p>Example Markup:</p>
+ 					<pre><code>&lt;p&gt;This is what &lt;strong&gt;bold text&lt;/strong&gt; looks like.&lt;/p&gt;
+&lt;p&gt;This is what &lt;em&gt;italicized text&lt;/em&gt; looks like.&lt;/p&gt;
+&lt;p&gt;This is what &lt;span class="underline"&gt;underlined text&lt;/span&gt; looks like.&lt;/p&gt;
+&lt;p&gt;This is what &lt;small&gt;small text&lt;/small&gt; looks like.&lt;/p&gt;</code></pre>
+ 				</section>
+
+ 				<section class="docs-section docs-section--grid" id="grids">
+ 					<h1 class="docs-section__heading">Grids</h1>
+ 					<p>Abby's grid system is created using flexbox. The markup and flexibility is dead simple. Simply add an element with the class <code>grid__col</code> inside of an element with the class <code>grid</code> and it will be treated as a column. There are no container or row classes, simply a <code>grid</code> class which is a container for the grid columns. To create a new row you must create a new element with the <code>grid</code> class.</p>
+
+					<div class="grid">
+		  			<div class="grid__col grid__col--3">
+		  				<code>.grid__col .grid__col--3</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+		  		<div class="grid">
+		  			<div class="grid__col grid__col--2">
+		  				<code>.grid__col .grid__col--2</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+		  		<div class="grid">
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+		  		<div class="grid">
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+		  		<div class="grid grid-last">
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  			<div class="grid__col">
+		  				<code>.grid__col</code>
+		  			</div>
+		  		</div>
+
+          <p>Example Markup:</p>
+
+		  		<pre><code>&lt;div class="grid"&gt;
+  &lt;div class="grid__col"&gt;
+  &lt;div class="grid__col"&gt;
+&lt;/div&gt;</code></pre>
+
+		  		<h2 class="u-font-4">Modifier Classes</h2>
+		  		<p>In order to have columns that are larger than others in the same "row" we need some modifier classes to change the <code>flex-grow</code> property. The class <code>grid__col--3</code> means make this element 3x as wide as the other columns in the same "flexed" box. Within Abby there are six modifier classes available for the <code>grid__col</code> class.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Modifier Class Name</th>
+                <th>Flex-grow Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>grid__col--6</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>grid__col--5</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>grid__col--4</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>grid__col--3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>grid__col--2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>grid__col--1</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+
+		  		<h2 class="u-font-4">Gutters</h2>
+		  		<p>Abby has customizable gutters. By default the grid gutters are set to <code>0.8rem</code>. This can be changed in <code>/src/_variables.scss</code>.</p>
+ 				</section>
+
+ 				<section class="docs-section" id="forms">
+ 					<h1 class="docs-section__heading">Forms</h1>
+ 					<p>Abby's forms are kept as simple and usable as can be while still looking good. Abby's grid system can be used in conjuction with the forms to create different layouts.</p>
+ 					<form>
+ 					  <fieldset>
+ 					  	<div class="grid">
+				  			<div class="grid__col">
+				  				<label for="">Name</label>
+				  				<input type="text" placeholder="Name">
+				  			</div>
+				  		  <div class="grid__col">
+				  		  	<label for="">Email</label>
+				  		  	<input type="email" placeholder="Email">
+				  		  </div>
+ 					  	</div>
+ 					    <label for="">Country</label>
+ 					    <select name="" id="">
+ 					      <option value="">Canada</option>
+ 					      <option value="">France</option>
+ 					      <option value="">USA</option>
+ 					      <option value="">UK</option>
+ 					    </select>
+ 					  </fieldset>
+ 					  <fieldset>
+ 					    <label for="checkbox">
+ 					      <input type="checkbox" id="checkbox"> Signup for Newsletter
+ 					    </label>
+ 					    <label for="radio">
+ 					      <input type="radio" id="radio"> Signup for Newsletter
+ 					    </label>
+ 					  </fieldset>
+ 					  <fieldset>
+ 					    <label for="message">Message:</label>
+ 					    <textarea id="message" placeholder="What's on your mind?" cols="30" rows="3"></textarea>
+ 					  </fieldset>
+ 					  <button type="submit">Submit</button>
+ 					</form>
+
+          <p>Example Markup:</p>
+
+ 					<pre><code>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;div class="grid"&gt;
+      &lt;div class="grid__col"&gt;
+    	  &lt;label for=""&gt;Name&lt;/label&gt;
+    	  &lt;input type="text" placeholder="Name"&gt;
+      &lt;/div&gt;
+      &lt;div class="grid__col"&gt;
+        &lt;label for=""&gt;Email&lt;/label&gt;
+        &lt;input type="email" placeholder="Email"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;label for=""&gt;Country&lt;/label&gt;
+    &lt;select name="" id=""&gt;
+      &lt;option value=""&gt;Canada&lt;/option&gt;
+      &lt;option value=""&gt;France&lt;/option&gt;
+      &lt;option value=""&gt;USA&lt;/option&gt;
+      &lt;option value=""&gt;UK&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/fieldset&gt;
+
+  &lt;fieldset&gt;
+    &lt;label for="checkbox"&gt;
+      &lt;input type="checkbox" id="checkbox"&gt; Signup for Newsletter
+    &lt;/label&gt;
+    &lt;label for="radio"&gt;
+      &lt;input type="radio" id="radio"&gt; Signup for Newsletter
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" placeholder="What's on your mind?" cols="30" rows="3"&gt;&lt;/textarea&gt;
+  &lt;/fieldset&gt;
+
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+ 				</section>
+
+ 				<section class="docs-section" id="buttons">
+ 					<h1 class="docs-section__heading">Buttons</h1>
+ 					<button type="button">Button Element</button>
+ 					<a href="" class="button">Anchor Button</a>
+ 					<input type="button" value="Button Input">
+ 					<input type="submit" value="Submit Input">
+
+          <p>Example Markup:</p>
+
+          <pre><code>&lt;button type="button">Button Element&lt;/button&gt;
+&lt;a href="" class="button"&gt;Anchor Button&lt;/a&gt;
+&lt;input type="button" value="Button Input"&gt;
+&lt;input type="submit" value="Submit Input"&gt;</code></pre>
+ 				</section>
+
+ 				<section class="docs-section" id="lists">
+ 					<h1 class="docs-section__heading">Lists</h1>
+ 					<ul>
+ 					  <li>List item 1</li>
+ 					  <li>List item 2</li>
+ 					  <ul>
+ 					    <li>Sublist item 1</li>
+ 					    <li>Sublist item 2</li>
+ 					    <li>Sublist item 3</li>
+ 					  </ul>
+ 					  <li>List item 3</li>
+ 					  <li>List item 4</li>
+ 					</ul>
+          <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <ol>
+              <li>Sublist item 1</li>
+              <li>Sublist item 2</li>
+              <li>Sublist item 3</li>
+            </ol>
+            <li>List item 3</li>
+            <li>List item 4</li>
+          </ol>
+
+          <p>Example Markup:</p>
+
+          <pre><code>&lt;ul&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Sublist item 1&lt;/li&gt;
+    &lt;li&gt;Sublist item 2&lt;/li&gt;
+    &lt;li&gt;Sublist item 3&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+  &lt;li&gt;List item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+ 				</section>
+
+ 				<section class="docs-section" id="tables">
+ 					<h1 class="docs-section__heading">Tables</h1>
+ 					<table>
+ 					  <thead>
+ 					    <tr>
+ 					      <th>Name</th>
+ 					      <th>Age</th>
+ 					      <th>Sex</th>
+ 					      <th>Location</th>
+ 					    </tr>
+ 					  </thead>
+ 					  <tbody>
+ 					    <tr>
+ 					      <td>Dave Gamache</td>
+ 					      <td>26</td>
+ 					      <td>Male</td>
+ 					      <td>San Francisco</td>
+ 					    </tr>
+ 					    <tr>
+ 					      <td>Dwayne Johnson</td>
+ 					      <td>42</td>
+ 					      <td>Male</td>
+ 					      <td>Hayward</td>
+ 					    </tr>
+ 					    <tr>
+ 					      <td>Mary Jane</td>
+ 					      <td>23</td>
+ 					      <td>Female</td>
+ 					      <td>New York</td>
+ 					    </tr>
+ 					  </tbody>
+ 					</table>
+          <p>Example Markup:</p>
+          <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+      &lt;th&gt;Sex&lt;/th&gt;
+      &lt;th&gt;Location&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Dave Gamache&lt;/td&gt;
+      &lt;td&gt;26&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;San Francisco&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Dwayne Johnson&lt;/td&gt;
+      &lt;td&gt;42&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;Hayward&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mary Jane&lt;/td&gt;
+      &lt;td&gt;23&lt;/td&gt;
+      &lt;td&gt;Female&lt;/td&gt;
+      &lt;td&gt;New York&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+ 				</section>
+
+ 				<section class="docs-section" id="code">
+ 					<h1 class="docs-section__heading">Code</h1>
+ 					      <pre><code><span>&lt;h1&gt;Heading 1&lt;/h1&gt;</span>
+<span>&lt;h2&gt;Heading 2&lt;/h2&gt;</span>
+
+.class {
+  color: red;
+}</code></pre>
+
+  				<p><code>This is some inline code</code> within a paragraph.</p>
+          <p>Example Markup:</p>
+          <pre><code>&lt;pre&gt;&lt;code&gt;&lt;span&gt;&lt;h1&gt;Heading 1&lt;/h1&gt;&lt;/span&gt;
+&lt;span&gt;&lt;h2&gt;Heading 2&lt;/h2&gt;&lt;/span&gt;
+
+.class {
+  color: red;
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;This is some inline code&lt;/code&gt; within a paragraph.&lt;/p&gt;</code></pre>
+ 				</section>
+
+ 			</section>
+
+      <section class="docs-section" id="utilities">
+        <h1 class="docs-section__heading">Utilities</h1>
+        <p>Abby comes with a few utilies that can help speed things up when starting a project. Some features are only available to use with SCSS, which is recommended.</p>
+
+        <h2 class="u-font-4">Mixins</h2>
+        <h3 class="u-font-5">Breakpoints</h3>
+        <p>Abby provides some media query mixins to helpout with responsive design. These are the default breakpoints, which are configurable in <code>src/_variables.scss</code>.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Key Name</th>
+              <th>Value (px)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>xsmall</td>
+              <td>400</td>
+            </tr>
+            <tr>
+              <td>small</td>
+              <td>640</td>
+            </tr>
+            <tr>
+              <td>medium</td>
+              <td>768</td>
+            </tr>
+            <tr>
+              <td>large</td>
+              <td>960</td>
+            </tr>
+            <tr>
+              <td>xlarge</td>
+              <td>1200</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Example use:</p>
+        <pre><code>.element {
+  color: blue;
+
+  @include bp(small) {
+    color: red;
+  }
+}</code></pre>
+
+        <h3 class="u-font-5">Clearfix</h3>
+        <p>To clearfix an element you can use <code>@include clearfix</code> in your stylesheet, or you can apply the <code>clearfix</code> class in your HTML.</p>
+
+        <h3 class="u-font-5">Transitions</h3>
+        <p>Abby includes a mixin to help with the <code>transition</code> property. Simply specify the easing type ('in', 'out', 'in-out') and the speed. The defaults can be changed in <code>src/_variables.scss</code>.</p>
+       
+        <p>Example:</p>
+        <pre><code>.element {
+  @include ease('in', 0.5);
+  color: red;
+}</code></pre>
+        
+        <h2 class="u-font-4">Helper Classes</h2>
+        <h3 class="u-font-5">Font Sizes</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Class Name</th>
+              <th>Value (rem)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>u-font-1</td>
+              <td>5.062</td>
+            </tr>
+            <tr>
+              <td>u-font-2</td>
+              <td>4.218</td>
+            </tr>
+            <tr>
+              <td>u-font-3</td>
+              <td>3.374</td>
+            </tr>
+            <tr>
+              <td>u-font-4</td>
+              <td>2.812</td>
+            </tr>
+            <tr>
+              <td>u-font-5</td>
+              <td>2.250</td>
+            </tr>
+            <tr>
+              <td>u-font-6</td>
+              <td>1.875</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="u-font-5">Background Colors</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Class Name</th>
+              <th>Value (rem)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>u-bg-black</td>
+              <td class="u-bg-black"></td>
+            </tr>
+            <tr>
+              <td>u-bg-dark-grey</td>
+              <td class="u-bg-dark-grey"></td>
+            </tr>
+            <tr>
+              <td>u-bg-mid-grey</td>
+              <td class="u-bg-mid-grey"></td>
+            </tr>
+            <tr>
+              <td>u-bg-light-grey</td>
+              <td class="u-bg-light-grey"></td>
+            </tr>
+            <tr>
+              <td>u-bg-white</td>
+              <td class="u-bg-white"></td>
+            </tr>
+            <tr>
+              <td>u-bg-red</td>
+              <td class="u-bg-red"></td>
+            </tr>
+            <tr>
+              <td>u-bg-pink</td>
+              <td class="u-bg-pink"></td>
+            </tr>
+            <tr>
+              <td>u-bg-purple</td>
+              <td class="u-bg-purple"></td>
+            </tr>
+            <tr>
+              <td>u-bg-indigo</td>
+              <td class="u-bg-indigo"></td>
+            </tr>
+            <tr>
+              <td>u-bg-blue</td>
+              <td class="u-bg-blue"></td>
+            </tr>
+            <tr>
+              <td>u-bg-cyan</td>
+              <td class="u-bg-cyan"></td>
+            </tr>
+            <tr>
+              <td>u-bg-green</td>
+              <td class="u-bg-green"></td>
+            </tr>
+            <tr>
+              <td>u-bg-yellow</td>
+              <td class="u-bg-yellow"></td>
+            </tr>
+            <tr>
+              <td>u-bg-orange</td>
+              <td class="u-bg-orange"></td>
+            </tr>
+            <tr>
+              <td>u-bg-brown</td>
+              <td class="u-bg-brown"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Example:</p>
+        <pre><code>&lt;div class="u-bg-red"&gt;&lt;/div&gt;</code></pre>
+      </section>
+
+ 		</main>
+
+    <script src="./docs.js"></script>
+ 	
+ </body>
+ </html>
