@@ -7,6 +7,7 @@
   <title>Lightweight HTML/CSS Boilerplate - Built with SCSS | Abby</title>
   <meta name="description" content="">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
   <link rel="stylesheet" href="./docs.css">
  </head>
  <body>
@@ -39,7 +40,7 @@
           </div>
           <div class="docs-intro__right">
             <div class="docs-intro__wrapper">
-              <h1>Usage</h1>
+              <h1 class="u-font-2">Usage</h1>
               <h2 class="u-font-4">CSS</h2>
               <pre><code>&lt;link rel="stylesheet" href="abby.css"&gt;</code></pre>
               <h2 class="u-font-4">SCSS</h2>
@@ -55,40 +56,36 @@
 
         <header class="docs-header">
           <nav class="docs-nav">
-            <a href="#typography" class="docs-nav__link">Typography</a>
-            <a href="#grids" class="docs-nav__link">Grids</a>
-            <a href="#forms" class="docs-nav__link">Forms</a>
-            <a href="#buttons" class="docs-nav__link">Buttons</a>
-            <a href="#lists" class="docs-nav__link">Lists</a>
-            <a href="#tables" class="docs-nav__link">Tables</a>
-            <a href="#code" class="docs-nav__link">Code</a>
-            <a href="#utilities" class="docs-nav__link">Utilities</a>
+            <a href="#typography" class="docs-nav__link scroll" data-speed="250">Typography</a>
+            <a href="#grids" class="docs-nav__link scroll" data-speed="250">Grids</a>
+            <a href="#forms" class="docs-nav__link scroll" data-speed="250">Forms</a>
+            <a href="#buttons" class="docs-nav__link scroll" data-speed="250">Buttons</a>
+            <a href="#lists" class="docs-nav__link scroll" data-speed="250">Lists</a>
+            <a href="#tables" class="docs-nav__link scroll" data-speed="250">Tables</a>
+            <a href="#code" class="docs-nav__link scroll" data-speed="250">Code</a>
+            <a href="#utilities" class="docs-nav__link scroll" data-speed="250">Utilities</a>
           </nav>
         </header>
         <div class="docs-header-spacer"></div>
  				
  				<section class="docs-section docs-section--typography" id="typography">
  					<h1 class="docs-section__heading">Typography</h1>
-					
- 					<div class="grid grid-last">
- 						<div class="grid__col">
- 							<h1>Heading 1 <code>h1</code></h1>
- 							<h2>Heading 2 <code>h2</code></h2>
- 							<h3>Heading 3 <code>h3</code></h3>
- 							<h4>Heading 4 <code>h4</code></h4>
- 							<h5>Heading 5 <code>h5</code></h5>
- 							<h6>Heading 6 <code>h6</code></h6>
- 						</div>
- 						<div class="grid__col">
- 							<pre><code><span>&lt;h1&gt;Heading 1&lt;/h1&gt;</span>
-<span>&lt;h2&gt;Heading 2&lt;/h2&gt;</span>
-<span>&lt;h3&gt;Heading 3&lt;/h3&gt;</span>
-<span>&lt;h4&gt;Heading 4&lt;/h4&gt;</span>
-<span>&lt;h5&gt;Heading 5&lt;/h5&gt;</span>
-<span>&lt;h6&gt;Heading 6&lt;/h6&gt;</span>
+
+          <h1>Heading 1 <code>h1</code></h1>
+          <h2>Heading 2 <code>h2</code></h2>
+          <h3>Heading 3 <code>h3</code></h3>
+          <h4>Heading 4 <code>h4</code></h4>
+          <h5>Heading 5 <code>h5</code></h5>
+          <h6>Heading 6 <code>h6</code></h6>
+          <br>
+
+          <pre><code class="language-markup">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
 </code></pre>
- 						</div>
- 					</div>
 
  					<p>
  						This is what <strong>bold text</strong> looks like.<br>
@@ -97,7 +94,7 @@
  						This is what <small>small text</small> looks like.
  					</p>
           <p>Example Markup:</p>
- 					<pre><code>&lt;p&gt;This is what &lt;strong&gt;bold text&lt;/strong&gt; looks like.&lt;/p&gt;
+ 					<pre><code class="language-markup">&lt;p&gt;This is what &lt;strong&gt;bold text&lt;/strong&gt; looks like.&lt;/p&gt;
 &lt;p&gt;This is what &lt;em&gt;italicized text&lt;/em&gt; looks like.&lt;/p&gt;
 &lt;p&gt;This is what &lt;span class="underline"&gt;underlined text&lt;/span&gt; looks like.&lt;/p&gt;
 &lt;p&gt;This is what &lt;small&gt;small text&lt;/small&gt; looks like.&lt;/p&gt;</code></pre>
@@ -159,7 +156,7 @@
 
           <p>Example Markup:</p>
 
-		  		<pre><code>&lt;div class="grid"&gt;
+		  		<pre><code class="language-markup">&lt;div class="grid"&gt;
   &lt;div class="grid__col"&gt;
   &lt;div class="grid__col"&gt;
 &lt;/div&gt;</code></pre>
@@ -246,7 +243,7 @@
 
           <p>Example Markup:</p>
 
- 					<pre><code>&lt;form&gt;
+ 					<pre><code class="language-markup">&lt;form&gt;
   &lt;fieldset&gt;
     &lt;div class="grid"&gt;
       &lt;div class="grid__col"&gt;
@@ -293,7 +290,7 @@
 
           <p>Example Markup:</p>
 
-          <pre><code>&lt;button type="button">Button Element&lt;/button&gt;
+          <pre><code class="language-markup">&lt;button type="button">Button Element&lt;/button&gt;
 &lt;a href="" class="button"&gt;Anchor Button&lt;/a&gt;
 &lt;input type="button" value="Button Input"&gt;
 &lt;input type="submit" value="Submit Input"&gt;</code></pre>
@@ -326,7 +323,7 @@
 
           <p>Example Markup:</p>
 
-          <pre><code>&lt;ul&gt;
+          <pre><code class="language-markup">&lt;ul&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
   &lt;li&gt;List item 2&lt;/li&gt;
   &lt;ul&gt;
@@ -372,7 +369,7 @@
  					  </tbody>
  					</table>
           <p>Example Markup:</p>
-          <pre><code>&lt;table&gt;
+          <pre><code class="language-markup">&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Name&lt;/th&gt;
@@ -406,20 +403,18 @@
 
  				<section class="docs-section" id="code">
  					<h1 class="docs-section__heading">Code</h1>
- 					      <pre><code><span>&lt;h1&gt;Heading 1&lt;/h1&gt;</span>
-<span>&lt;h2&gt;Heading 2&lt;/h2&gt;</span>
-
-.class {
+ 					      <pre><code>.class {
   color: red;
+  font-size: 12px;
+  vertical-align: middle;
 }</code></pre>
 
   				<p><code>This is some inline code</code> within a paragraph.</p>
           <p>Example Markup:</p>
-          <pre><code>&lt;pre&gt;&lt;code&gt;&lt;span&gt;&lt;h1&gt;Heading 1&lt;/h1&gt;&lt;/span&gt;
-&lt;span&gt;&lt;h2&gt;Heading 2&lt;/h2&gt;&lt;/span&gt;
-
-.class {
+          <pre><code class="language-css">&lt;pre&gt;&lt;code&gt;.class {
   color: red;
+  font-size: 12px;
+  vertical-align: middle;
 }&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;code&gt;This is some inline code&lt;/code&gt; within a paragraph.&lt;/p&gt;</code></pre>
@@ -467,7 +462,7 @@
         </table>
 
         <p>Example use:</p>
-        <pre><code>.element {
+        <pre><code class="language-css">.element {
   color: blue;
 
   @include bp(small) {
@@ -482,7 +477,7 @@
         <p>Abby includes a mixin to help with the <code>transition</code> property. Simply specify the easing type ('in', 'out', 'in-out') and the speed. The defaults can be changed in <code>src/_variables.scss</code>.</p>
        
         <p>Example:</p>
-        <pre><code>.element {
+        <pre><code class="language-css">.element {
   @include ease('in', 0.5);
   color: red;
 }</code></pre>
@@ -599,12 +594,13 @@
         </table>
 
         <p>Example:</p>
-        <pre><code>&lt;div class="u-bg-red"&gt;&lt;/div&gt;</code></pre>
+        <pre><code class="language-markup">&lt;div class="u-bg-red"&gt;&lt;/div&gt;</code></pre>
       </section>
 
  		</main>
 
     <script src="./docs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
  	
  </body>
  </html>
