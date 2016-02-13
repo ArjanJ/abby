@@ -506,13 +506,16 @@ body {
   width: 100%;
   padding: 0 1.2rem;
   z-index: 10;
-  background: rgba(250, 250, 250, 0.75);
+  background: #fafafa;
   -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1); }
   .docs-header--fixed {
     position: fixed;
     top: 0;
     left: 0; }
+  @media (min-width: 768px) {
+    .docs-header {
+      background: rgba(250, 250, 250, 0.75); } }
 
 .docs-header-spacer {
   display: none;

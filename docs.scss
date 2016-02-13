@@ -19,13 +19,17 @@ body {
 		width: 100%;
 		padding: (0) ($base-space / 2);
 		z-index: 10;
-		background: rgba(color(white), 0.75);
+		background: rgba(color(white), 1);
 		@include ease();
 
 		&--fixed {
 			position: fixed;
 			top: 0;
 			left: 0;
+		}
+
+		@include bp(medium) {
+			background: rgba(color(white), 0.75);
 		}
 	}
 
