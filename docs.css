@@ -717,17 +717,13 @@ pre[class*=language-] {
         margin-bottom: 7.2rem; } }
 
 .hamburger {
-  padding: 0;
+  padding: 1.2rem;
   position: fixed;
-  top: 2.4rem;
-  right: 2.4rem;
+  top: 1.6rem;
+  right: 1.6rem;
   z-index: 100;
   cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: none;
-  background: none;
+  background: #FAFAFA;
   -webkit-tap-highlight-color: transparent; }
   .hamburger:focus {
     outline: none; }

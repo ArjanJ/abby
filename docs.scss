@@ -257,15 +257,13 @@ pre[class*=language-] {
 
   $class: &; // root component class name
 
-  padding: 0;
+  padding: ($base-space / 2);
 	position: fixed;
-	top: $base-space;
-	right: $base-space;
+	top: ($base-space / 1.5);
+	right: ($base-space / 1.5);
   z-index: 100;
 	cursor: pointer;
-  appearance: none;
-  border: none;
-  background: none;
+	background: color(white);
 	// remove tap highlight on android devices
 	-webkit-tap-highlight-color: rgba(black, 0);
 
