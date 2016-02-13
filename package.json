@@ -1,7 +1,7 @@
 {
   "name": "abby",
   "version": "0.0.1",
-  "description": "Abby is a CSS starter-kit built with scss.",
+  "description": "A lightweight HTML/CSS boilerplate, built with SCSS",
   "main": "./build/abby.css",
   "scripts": {
     "start": "gulp",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArjanJ/arjanj.github.io.git"
+    "url": "git+https://github.com/ArjanJ/abby.git"
   },
   "author": "ArjanJ",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ArjanJ/arjanj.github.io/issues"
+    "url": "https://github.com/ArjanJ/abby/issues"
   },
-  "homepage": "https://github.com/ArjanJ/arjanj.github.io#readme",
+  "homepage": "http://abby.arjanjassal.me",
   "devDependencies": {
     "autoprefixer": "^6.1.2",
     "babel-core": "^6.3.13",
