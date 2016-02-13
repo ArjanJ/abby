@@ -503,7 +503,10 @@ pre[class*=language-] {
   clear: both; }
 
 .docs-header {
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -511,7 +514,6 @@ pre[class*=language-] {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -525,8 +527,17 @@ pre[class*=language-] {
   width: 100%;
   z-index: 10;
   background: #fafafa;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1); }
+  .docs-header--active {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   @media (min-width: 768px) {
     .docs-header {
       display: -webkit-box;
@@ -542,7 +553,11 @@ pre[class*=language-] {
               flex-direction: row;
       margin-bottom: 5.4rem;
       padding: 0 1.2rem;
-      background: rgba(250, 250, 250, 0.85); }
+      background: rgba(250, 250, 250, 0.85);
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: none;
+              transform: none; }
       .docs-header--fixed {
         position: fixed;
         top: 0;
@@ -561,7 +576,7 @@ pre[class*=language-] {
     text-align: center;
     padding: 1.06667rem 2.4rem;
     color: #311D3F;
-    font-size: 1.875rem;
+    font-size: 2.25rem;
     -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1); }
     .docs-nav__link:hover {
@@ -700,3 +715,33 @@ pre[class*=language-] {
       margin: 0 auto 4.8rem; }
       .docs-section__heading {
         margin-bottom: 7.2rem; } }
+
+.hamburger {
+  padding: 0;
+  position: fixed;
+  top: 2.4rem;
+  right: 2.4rem;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: none;
+  -webkit-tap-highlight-color: transparent; }
+  .hamburger:focus {
+    outline: none; }
+  .hamburger:active .hamburger-line {
+    opacity: 0.5; }
+  .hamburger__patty {
+    display: block;
+    margin: 0 0 5px 0;
+    width: 30px;
+    height: 2px;
+    background: #311D3F;
+    pointer-events: none; }
+    .hamburger__patty:last-child {
+      margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none; } }

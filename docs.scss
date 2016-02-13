@@ -22,7 +22,7 @@ pre[class*=language-] {
 	@include clearfix;
 
 	&-header {
-		display: none;
+		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
@@ -33,7 +33,16 @@ pre[class*=language-] {
 		width: 100%;
 		z-index: 10;
 		background: rgba(color(white), 1);
+		opacity: 0;
+		visibility: hidden;
+		transform: scale(1.5);
 		@include ease();
+
+		&--active {
+			opacity: 1;
+			visibility: visible;
+			transform: scale(1);
+		}
 
 		@include bp(medium) {
 			display: flex;
@@ -43,6 +52,9 @@ pre[class*=language-] {
 			margin-bottom: ($base-space * 2.25);
 			padding: (0) ($base-space / 2);
 			background: rgba(color(white), 0.85);
+			opacity: 1;
+			visibility: visible;
+			transform: none;
 
 			&--fixed {
 				position: fixed;
@@ -69,7 +81,7 @@ pre[class*=language-] {
 			text-align: center;
 			padding: ($base-space / 2.25) ($base-space);
 			color: $navy;
-			font-size: map-get($heading-sizes, 6);
+			font-size: map-get($heading-sizes, 5);
 			@include ease();
 
 			&:hover {
@@ -238,5 +250,50 @@ pre[class*=language-] {
 				margin-bottom: ($base-space * 3);
 			}
 		}
+	}
+}
+
+.hamburger {
+
+  $class: &; // root component class name
+
+  padding: 0;
+	position: fixed;
+	top: $base-space;
+	right: $base-space;
+  z-index: 100;
+	cursor: pointer;
+  appearance: none;
+  border: none;
+  background: none;
+	// remove tap highlight on android devices
+	-webkit-tap-highlight-color: rgba(black, 0);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+
+    #{$class}-line {
+      opacity: 0.5;
+    }
+  }
+
+  &__patty {
+    display: block;
+    margin: 0 0 5px 0;
+    width: 30px;
+    height: 2px;
+    background: $navy;
+    pointer-events: none;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+	@include bp(medium) {
+		display: none;
 	}
 }
