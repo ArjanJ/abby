@@ -34,7 +34,7 @@ $font-weight-headings: 	300;
  * FONT FAMILY
  */
 
-$font-copy: 		'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-copy: 		'Helvetica Neue', 'Source Sans Pro', 'Arial', sans-serif;
 $font-headings: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 /**
@@ -94,5 +94,5 @@ $ease-in: 		cubic-bezier(0.755, 0.05, 0.855, 0.06);
 $ease-out: 		cubic-bezier(0.23, 1, 0.32, 1);
 $ease-in-out: cubic-bezier(0.86, 0, 0.07, 1);
 
-$transition-ease: 'out' !default;
-$transition-speed: 0.25 !default;
+$transition-ease: 	'out' !default;
+$transition-speed: 	0.25 !default;

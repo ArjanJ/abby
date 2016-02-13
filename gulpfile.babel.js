@@ -35,7 +35,7 @@ gulp.task('watch', watch);
 
 gulp.task('styles', styles);
 
-gulp.task('docStyles', docStyles);
+gulp.task('docStyles', ['styles'], docStyles);
 
 gulp.task('deploy', deploy);
 
@@ -50,7 +50,7 @@ function serve() {
 }
 
 function watch() {
-	gulp.watch(paths.css.src, ['styles']);
+	gulp.watch(paths.css.src, ['styles', 'docStyles']);
 	gulp.watch(paths.css.docs, ['docStyles']);
 }
 
