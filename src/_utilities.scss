@@ -16,10 +16,10 @@
 
 @each $key, $value in $heading-sizes {
 
-	.u-font-#{$key},
-	%u-font-#{$key} {
+	.u-heading-#{$key},
+	%u-heading-#{$key} {
 		font-size: $value;
-		line-height: 1.15;
+		line-height: $line-height-headings;
 		margin-bottom: ($base-space / $key);
 	}
 }

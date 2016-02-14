@@ -2,25 +2,49 @@
 		#BASE
 \*------------------------------------*/
 
+/**
+ * 1. Make every element inherit the value for the box-sizing property. This 
+ * 		allows for easy overriding and cascading.
+ */
+
  *,
  *:before,
  *:after {
- 	box-sizing: inherit;
+ 	box-sizing: inherit; // 1
  	margin: 0;
  	padding: 0;
  	font-size: inherit;
- 	line-height: inherit;
  }
 
+/**
+ * 1. Auto-hiding scrollbars are used if the element's content overflows
+ *		(IE 10/11).
+ * 2. Disable unwanted auto-enlargement of small text in mobile browsers.
+ * 3. Set to border-box so the width/height of an element is calculated to
+ *		include padding.
+ * 4. Set root font-size to 0.625rem that 1rem == 10px.
+ */
+
  :root {
- 	-ms-overflow-style: -ms-autohiding-scrollbar;
-	text-size-adjust: 100%;
-	box-sizing: border-box;
+ 	-ms-overflow-style: -ms-autohiding-scrollbar; // 1
+	text-size-adjust: 100%; // 2
+	box-sizing: border-box; // 3
+	font-size: $font-size-root; // 4
+	font-family: $font-copy;
+  font-weight: $font-weight-default;
+  line-height: $line-height-base;
+	-webkit-font-smoothing: antialiased; // Smooth fonts in webkit.
+	-moz-osx-font-smoothing: grayscale; // Smooth fonts in moz.
+  text-rendering: optimizeLegibility;
 	cursor: default;
  }
 
+/**
+ * 1. Hide auto element in Chrome 40+, iOS 8+, Safari 8+.
+ */
+
 audio:not([controls]) {
-	display: none; // Chrome 40+, iOS 8+, Safari 8+
+	display: none; // 1
 }
 
 details {

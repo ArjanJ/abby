@@ -2,18 +2,8 @@
     #TYPOGRAPHY
 \*------------------------------------*/
 
-:root {
-  font-size: $font-size-root;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
-  font-family: $font-copy;
-  font-weight: $font-weight-default;
   font-size: $font-size-body;
-  line-height: $line-height-base;
   color: $text-color;
 }
 
@@ -27,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.15;
+  line-height: $line-height-headings;
   font-weight: $font-weight-headings;
   font-family: $font-headings;
   color: $headings-color;
