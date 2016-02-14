@@ -2,7 +2,8 @@
 A lightweight HTML/CSS boilerplate, built with SCSS.
 
 ## NPM
-```npm install abby --save-dev
+```
+npm install abby --save-dev
 ```
 
 ## Use CSS
