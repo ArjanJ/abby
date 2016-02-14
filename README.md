@@ -23,4 +23,4 @@ View the documentation [here](http://abby.arjanjassal.me).
 Coming soon.
 
 ### License
-TBD
+[MIT](http://cjpatoilo.mit-license.org/)
