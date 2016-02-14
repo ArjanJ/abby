@@ -74,6 +74,7 @@ pre[class*=language-] {
 	}
 
 	&-nav {
+		width: 100%;
 		padding: ($base-space);
 
 		&__link {

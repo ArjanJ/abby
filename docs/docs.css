@@ -570,6 +570,7 @@ pre[class*=language-] {
     display: block; }
 
 .docs-nav {
+  width: 100%;
   padding: 2.4rem; }
   .docs-nav__link {
     display: block;
