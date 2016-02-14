@@ -1,26 +1,26 @@
 # Abby
 A lightweight HTML/CSS boilerplate, built with SCSS.
 
-## NPM
+### NPM
 ```
 npm install abby --save-dev
 ```
 
-## Use CSS
+### Use CSS
 ```html
 <link rel="stylesheet" href="abby.css">
 ```
 
-## Use SCSS
+### Use SCSS
 ```css
 @import "abby";
 ```
 
-## Documentation
+### Documentation
 View the documentation [here](http://abby.arjanjassal.me).
 
-## Overview
+### Overview
 Coming soon.
 
-## License
+### License
 TBD
