@@ -1,6 +1,6 @@
 {
   "name": "abby",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A lightweight HTML/CSS boilerplate, built with SCSS",
   "main": "./build/abby.css",
   "scripts": {
@@ -16,6 +16,13 @@
   "bugs": {
     "url": "https://github.com/ArjanJ/abby/issues"
   },
+  "keywords": [
+    "css",
+    "boilerplate",
+    "scss",
+    "framework",
+    "lightweight"
+  ],
   "homepage": "http://abby.arjanjassal.me",
   "devDependencies": {
     "autoprefixer": "^6.1.2",
