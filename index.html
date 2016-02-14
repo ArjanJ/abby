@@ -46,15 +46,15 @@
           </div>
           <div class="docs-intro__right">
             <div class="docs-intro__wrapper">
-              <h1 class="u-font-2">Usage</h1>
-              <h2 class="u-font-4">CSS</h2>
+              <h1 class="u-heading-2">Usage</h1>
+              <h2 class="u-heading-4">CSS</h2>
               <pre><code>&lt;link rel="stylesheet" href="abby.css"&gt;</code></pre>
-              <h2 class="u-font-4">SCSS</h2>
+              <h2 class="u-heading-4">SCSS</h2>
               <pre><code>@import "abby"</code></pre>
-              <h2 class="u-font-4">NPM</h2>
+              <h2 class="u-heading-4">NPM</h2>
               <pre><code>npm install abby --save-dev</code></pre>
 
-              <h2 class="u-font-4">Why use Abby?</h1>
+              <h2 class="u-heading-4">Why use Abby?</h1>
               <p>Abby is designed to be a lightweight, modern starting point for web projects. Because Abby is made with SCSS, it's super easy to customize the typography, vertical-rhythm, breakpoints, without overriding anything. It's recommended that you only use Abby on projects that support Internet Explorer 11 and up.</p>
             </div>
           </div>
@@ -167,7 +167,7 @@
   &lt;div class="grid__col"&gt;
 &lt;/div&gt;</code></pre>
 
-		  		<h2 class="u-font-4">Modifier Classes</h2>
+		  		<h2 class="u-heading-4">Modifier Classes</h2>
 		  		<p>In order to have columns that are larger than others in the same "row" we need some modifier classes to change the <code>flex-grow</code> property. The class <code>grid__col--3</code> means make this element 3x as wide as the other columns in the same "flexed" box. Within Abby there are six modifier classes available for the <code>grid__col</code> class.</p>
 
           <table>
@@ -205,7 +205,7 @@
             </tbody>
           </table>
 
-		  		<h2 class="u-font-4">Gutters</h2>
+		  		<h2 class="u-heading-4">Gutters</h2>
 		  		<p>Abby has customizable gutters. By default the grid gutters are set to <code>0.8rem</code>. This can be changed in <code>/src/_variables.scss</code>.</p>
  				</section>
 
@@ -432,8 +432,8 @@
         <h1 class="docs-section__heading">Utilities</h1>
         <p>Abby comes with a few utilies that can help speed things up when starting a project. Some features are only available to use with SCSS, which is recommended.</p>
 
-        <h2 class="u-font-4">Mixins</h2>
-        <h3 class="u-font-5">Breakpoints</h3>
+        <h2 class="u-heading-4">Mixins</h2>
+        <h3 class="u-heading-5">Breakpoints</h3>
         <p>Abby provides some media query mixins to helpout with responsive design. These are the default breakpoints, which are configurable in <code>src/_variables.scss</code>.</p>
 
         <table>
@@ -476,10 +476,10 @@
   }
 }</code></pre>
 
-        <h3 class="u-font-5">Clearfix</h3>
+        <h3 class="u-heading-5">Clearfix</h3>
         <p>To clearfix an element you can use <code>@include clearfix</code> in your stylesheet, or you can apply the <code>clearfix</code> class in your HTML.</p>
 
-        <h3 class="u-font-5">Transitions</h3>
+        <h3 class="u-heading-5">Transitions</h3>
         <p>Abby includes a mixin to help with the <code>transition</code> property. Simply specify the easing type ('in', 'out', 'in-out') and the speed. The defaults can be changed in <code>src/_variables.scss</code>.</p>
        
         <p>Example:</p>
@@ -488,8 +488,8 @@
   color: red;
 }</code></pre>
         
-        <h2 class="u-font-4">Helper Classes</h2>
-        <h3 class="u-font-5">Font Sizes</h3>
+        <h2 class="u-heading-4">Helper Classes</h2>
+        <h3 class="u-heading-5">Font Sizes</h3>
 
         <table>
           <thead>
@@ -500,33 +500,33 @@
           </thead>
           <tbody>
             <tr>
-              <td>u-font-1</td>
+              <td>u-heading-1</td>
               <td>5.062</td>
             </tr>
             <tr>
-              <td>u-font-2</td>
+              <td>u-heading-2</td>
               <td>4.218</td>
             </tr>
             <tr>
-              <td>u-font-3</td>
+              <td>u-heading-3</td>
               <td>3.374</td>
             </tr>
             <tr>
-              <td>u-font-4</td>
+              <td>u-heading-4</td>
               <td>2.812</td>
             </tr>
             <tr>
-              <td>u-font-5</td>
+              <td>u-heading-5</td>
               <td>2.250</td>
             </tr>
             <tr>
-              <td>u-font-6</td>
+              <td>u-heading-6</td>
               <td>1.875</td>
             </tr>
           </tbody>
         </table>
 
-        <h3 class="u-font-5">Background Colors</h3>
+        <h3 class="u-heading-5">Background Colors</h3>
 
         <table>
           <thead>

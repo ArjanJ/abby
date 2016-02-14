@@ -41,23 +41,44 @@
  */
 /*------------------------------------*		#BASE
 \*------------------------------------*/
+/**
+ * 1. Make every element inherit the value for the box-sizing property. This 
+ * 		allows for easy overriding and cascading.
+ */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  font-size: inherit;
-  line-height: inherit; }
+  font-size: inherit; }
 
+/**
+ * 1. Auto-hiding scrollbars are used if the element's content overflows
+ *		(IE 10/11).
+ * 2. Disable unwanted auto-enlargement of small text in mobile browsers.
+ * 3. Set to border-box so the width/height of an element is calculated to
+ *		include padding.
+ * 4. Set root font-size to 0.625rem that 1rem == 10px.
+ */
 :root {
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
   box-sizing: border-box;
+  font-size: 0.625rem;
+  font-family: "Helvetica Neue", "Source Sans Pro", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   cursor: default; }
 
+/**
+ * 1. Hide auto element in Chrome 40+, iOS 8+, Safari 8+.
+ */
 audio:not([controls]) {
   display: none; }
 
@@ -118,17 +139,8 @@ samp {
 
 /*------------------------------------*    #TYPOGRAPHY
 \*------------------------------------*/
-:root {
-  font-size: 0.625rem;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale; }
-
 body {
-  font-family: "Helvetica Neue", "Source Sans Pro", "Arial", sans-serif;
-  font-weight: 300;
   font-size: 1.5rem;
-  line-height: 1.6;
   color: #212121; }
 
 p {
@@ -319,7 +331,6 @@ textarea,
 
 /*------------------------------------*		#BUTTON
 \*------------------------------------*/
-button,
 .button,
 [type="button"],
 [type="submit"],
@@ -334,13 +345,11 @@ button,
   border-radius: 5px;
   vertical-align: middle;
   white-space: nowrap;
-  cursor: pointer;
   line-height: inherit;
   font-size: 1.5rem;
-  letter-spacing: .2px;
+  cursor: pointer;
   color: #212121;
   background: #F1F1F1; }
-  button:focus,
   .button:focus,
   [type="button"]:focus,
   [type="submit"]:focus,
@@ -407,32 +416,32 @@ code {
 /**
  * FONT-SIZES
  */
-.u-font-1 {
+.u-heading-1 {
   font-size: 5.062rem;
   line-height: 1.15;
   margin-bottom: 2.4rem; }
 
-.u-font-2 {
+.u-heading-2 {
   font-size: 4.218rem;
   line-height: 1.15;
   margin-bottom: 1.2rem; }
 
-.u-font-3 {
+.u-heading-3 {
   font-size: 3.374rem;
   line-height: 1.15;
   margin-bottom: 0.8rem; }
 
-.u-font-4 {
+.u-heading-4 {
   font-size: 2.812rem;
   line-height: 1.15;
   margin-bottom: 0.6rem; }
 
-.u-font-5 {
+.u-heading-5 {
   font-size: 2.25rem;
   line-height: 1.15;
   margin-bottom: 0.48rem; }
 
-.u-font-6 {
+.u-heading-6 {
   font-size: 1.875rem;
   line-height: 1.15;
   margin-bottom: 0.4rem; }
