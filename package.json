@@ -1,6 +1,6 @@
 {
   "name": "abby",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight HTML/CSS boilerplate, built with SCSS",
   "main": "./build/abby.css",
   "scripts": {

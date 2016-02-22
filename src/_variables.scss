@@ -8,18 +8,18 @@
  */
 
 $font-size-root: 				0.625rem;
-$line-height-base: 			1.6;
-$line-height-headings: 	1.15;
+$line-height-base: 			1.618;
+$line-height-headings: 	1.2;
 
-$font-size-body: 1.5rem;
+$font-size-body: 1.618rem;
 
 $heading-sizes: (
-	1: 5.062rem,
-	2: 4.218rem,
-	3: 3.374rem,
-	4: 2.812rem,
-	5: 2.250rem,
-	6: 1.875rem
+	1: 5.545rem,
+	2: 4.236rem,
+	3: 3.427rem,
+	4: 2.618rem,
+	5: 2.148rem,
+	6: 1.618rem
 );
 
 $font-size-code: 1.25rem;
@@ -60,7 +60,7 @@ $breakpoints: (
  * GRID
  */
 
-$grid-gutter: ($base-space / 3);
+$grid-gutter: ($base-space / 2.6);
 
 /**
  * COLORS
@@ -95,5 +95,5 @@ $ease-in: 		cubic-bezier(0.755, 0.05, 0.855, 0.06);
 $ease-out: 		cubic-bezier(0.23, 1, 0.32, 1);
 $ease-in-out: cubic-bezier(0.86, 0, 0.07, 1);
 
-$transition-ease: 	'out' !default;
-$transition-speed: 	0.25 !default;
+$transition-ease: 	'out';
+$transition-speed: 	0.25;

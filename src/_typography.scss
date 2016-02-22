@@ -30,27 +30,27 @@ h1 {
 
 h2 {
   font-size: map-get($heading-sizes, 2);
-  margin-bottom: ($base-space / 1.5);
+  margin-bottom: ($base-space / 1.214);
 }
 
 h3 {
   font-size: map-get($heading-sizes, 3);
-  margin-bottom: ($base-space / 1.875);
+  margin-bottom: ($base-space / 1.618);
 }
 
 h4 {
   font-size: map-get($heading-sizes, 4);
-  margin-bottom: ($base-space / 3.374);
+  margin-bottom: ($base-space / 2.148);
 }
 
 h5 {
   font-size: map-get($heading-sizes, 5);
-  margin-bottom: ($base-space / 4.218);
+  margin-bottom: ($base-space / 2.618);
 }
 
 h6 {
   font-size: map-get($heading-sizes, 6);
-  margin-bottom: ($base-space / 5.062);
+  margin-bottom: ($base-space / 3.427);
 }
 
 small {
