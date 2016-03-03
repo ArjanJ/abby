@@ -1,6 +1,8 @@
 # Abby
 A lightweight HTML/CSS boilerplate, built with SCSS.
 
+[![NPM](https://nodei.co/npm/abby.png?compact=true)](https://npmjs.org/package/abby)
+
 <a href="https://github.com/ArjanJ/abby/archive/master.zip" download>Download Zip</a>
 
 ### NPM Install

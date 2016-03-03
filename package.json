@@ -1,8 +1,8 @@
 {
   "name": "abby",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A lightweight HTML/CSS boilerplate, built with SCSS",
-  "main": "./build/abby.css",
+  "main": "./src/abby.scss",
   "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
