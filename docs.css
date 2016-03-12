@@ -574,7 +574,7 @@ pre[class*=language-] {
 
 .docs-intro {
   display: block;
-  min-height: 850px;
+  min-height: 100vh;
   margin-bottom: 5.23585rem;
   background: #FAFAFA; }
   .docs-intro:before, .docs-intro:after {
@@ -598,9 +598,9 @@ pre[class*=language-] {
   .docs-intro__heading {
     color: #F44336;
     font-weight: 700;
-    text-transform: uppercase;
     font-size: 7.258rem;
-    text-shadow: 1px 1px #ab2f26, 2px 2px #ab2f26, 3px 3px #ab2f26, 4px 4px #ab2f26, 5px 5px #ab2f26, 6px 6px #ab2f26; }
+    letter-spacing: -0.26179rem;
+    text-shadow: 1px 1px #dc3c31, 2px 2px #c3362b, 3px 3px #ab2f26, 4px 4px #922820, 5px 5px #7a221b, 6px 6px #621b16; }
     @media (min-width: 960px) {
       .docs-intro__heading {
         font-size: 11.74344rem; } }
@@ -665,10 +665,7 @@ pre[class*=language-] {
     position: relative;
     color: #311D3F;
     padding: 2.61792rem 0;
-    font-size: 3.427rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.32724rem; }
+    font-size: 3.427rem; }
   .docs-section .c-grid-last {
     margin-bottom: 2.61792rem; }
   .docs-section--typography .c-grid__col:first-of-type {
