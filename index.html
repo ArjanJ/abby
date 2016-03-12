@@ -24,7 +24,7 @@
 
  		<main class="docs">
 
-      <button type="button" class="hamburger">
+      <button type="button" class="hamburger c-button">
         <span class="hamburger__patty"></span>
         <span class="hamburger__patty"></span>
         <span class="hamburger__patty"></span>
@@ -36,10 +36,10 @@
           <div class="docs-intro__left">
             <div class="docs-intro__wrapper">
               <h1 class="docs-intro__heading">Abby</h1>
-              <p class="docs-intro__subheading">A lightweight HTML/CSS boilerplate, built with SCSS.</p>
+              <h2 class="docs-intro__subheading">A lightweight HTML/CSS boilerplate built with SCSS.</h2>
               <p>
-                <a download href="https://github.com/ArjanJ/abby/archive/master.zip" class="button docs-intro__dl-btn">Download</a>
-                <a href="https://github.com/ArjanJ/abby" target="_blank" class="button">View on Github</a>
+                <a download href="https://github.com/ArjanJ/abby/archive/master.zip" class="c-button docs-intro__dl-btn">Download</a>
+                <a href="https://github.com/ArjanJ/abby" target="_blank" class="c-button docs-intro__gh-btn">View on Github</a>
               </p>
               <!-- Place this tag where you want the button to render. -->
               <a class="github-button" href="https://github.com/ArjanJ/abby" aria-label="Star ArjanJ/abby on GitHub">Star</a>
@@ -65,7 +65,7 @@
               <pre><code>npm install abby --save-dev</code></pre>
 
               <h2 class="u-heading-4">Why use Abby?</h1>
-              <p>Abby is designed to be a lightweight, modern starting point for web projects. Because Abby is made with SCSS, it's super easy to customize the typography, vertical-rhythm, breakpoints, without overriding anything. It's recommended that you only use Abby on projects that support Internet Explorer 11 and up.</p>
+              <p>Abby is designed to be a <strong>lightweight (5kb)</strong>, modern starting point for web projects. Because Abby is made with SCSS, it's super easy to customize the typography, vertical-rhythm, and breakpoints, without overriding anything. It's recommended that you only use Abby on projects that support Internet Explorer 11 and up.</p>
             </div>
           </div>
  				</section>
@@ -82,7 +82,6 @@
             <a href="#utilities" class="docs-nav__link scroll" data-speed="250">Utilities</a>
           </nav>
         </header>
-        <div class="docs-header-spacer"></div>
  				
  				<section class="docs-section docs-section--typography" id="typography">
  					<h1 class="docs-section__heading">Typography</h1>
@@ -120,159 +119,159 @@
  					<h1 class="docs-section__heading">Grids</h1>
  					<p>Abby's grid system is created using flexbox. The markup and flexibility is dead simple. Simply add an element with the class <code>grid__col</code> inside of an element with the class <code>grid</code> and it will be treated as a column. There are no container or row classes, simply a <code>grid</code> class which is a container for the grid columns. To create a new row you must create a new element with the <code>grid</code> class.</p>
 
-					<div class="grid">
-		  			<div class="grid__col grid__col--3">
-		  				<code>.grid__col .grid__col--3</code>
+					<div class="c-grid">
+		  			<div class="c-grid__col c-grid__col--3">
+		  				<code>.c-grid__col .c-grid__col--3</code>
 		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
-		  			</div>
-		  		</div>
-		  		<div class="grid">
-		  			<div class="grid__col grid__col--2">
-		  				<code>.grid__col .grid__col--2</code>
-		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
 		  			</div>
 		  		</div>
-		  		<div class="grid">
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
+		  		<div class="c-grid">
+		  			<div class="c-grid__col c-grid__col--2">
+		  				<code>.c-grid__col .c-grid__col--2</code>
 		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
-		  			</div>
-		  		</div>
-		  		<div class="grid">
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
-		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
-		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
 		  			</div>
 		  		</div>
-		  		<div class="grid grid-last">
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
+		  		<div class="c-grid">
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
 		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
 		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
+		  		</div>
+		  		<div class="c-grid">
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
 		  			</div>
-		  			<div class="grid__col">
-		  				<code>.grid__col</code>
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
+		  			</div>
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
+		  			</div>
+		  		</div>
+		  		<div class="c-grid c-grid-last">
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
+		  			</div>
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
+		  			</div>
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
+		  			</div>
+		  			<div class="c-grid__col">
+		  				<code>.c-grid__col</code>
 		  			</div>
 		  		</div>
 
           <p>Example Markup:</p>
 
-		  		<pre><code class="language-markup">&lt;div class="grid"&gt;
-  &lt;div class="grid__col"&gt;
-  &lt;div class="grid__col"&gt;
+		  		<pre><code class="language-markup">&lt;div class="c-grid"&gt;
+  &lt;div class="c-grid__col"&gt;
+  &lt;div class="c-grid__col"&gt;
 &lt;/div&gt;</code></pre>
 
 		  		<h2 class="u-heading-4">Modifier Classes</h2>
-		  		<p>In order to have columns that are larger than others in the same "row" we need some modifier classes to change the <code>flex-grow</code> property. The class <code>grid__col--3</code> means make this element 3x as wide as the other columns in the same "flexed" box. Within Abby there are six modifier classes available for the <code>grid__col</code> class.</p>
+		  		<p>In order to have columns that are larger than others in the same "row" we need some modifier classes to change the <code>flex-grow</code> property. The class <code>c-grid__col--3</code> means make this element 3x as wide as the other columns in the same "flexed" box. Within Abby there are six modifier classes available for the <code>c-grid__col</code> class.</p>
 
-          <table>
+          <table class="c-table">
             <thead>
-              <tr>
-                <th>Modifier Class Name</th>
-                <th>Flex-grow Value</th>
+              <tr class="c-tr">
+                <th class="c-th">Modifier Class Name</th>
+                <th class="c-th">Flex-grow Value</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>grid__col--6</td>
-                <td>6</td>
+              <tr class="c-tr">
+                <td class="c-td">grid__col--6</td>
+                <td class="c-td">6</td>
               </tr>
-              <tr>
-                <td>grid__col--5</td>
-                <td>5</td>
+              <tr class="c-tr">
+                <td class="c-td">grid__col--5</td>
+                <td class="c-td">5</td>
               </tr>
-              <tr>
-                <td>grid__col--4</td>
-                <td>4</td>
+              <tr class="c-tr">
+                <td class="c-td">grid__col--4</td>
+                <td class="c-td">4</td>
               </tr>
-              <tr>
-                <td>grid__col--3</td>
-                <td>3</td>
+              <tr class="c-tr">
+                <td class="c-td">grid__col--3</td>
+                <td class="c-td">3</td>
               </tr>
-              <tr>
-                <td>grid__col--2</td>
-                <td>2</td>
+              <tr class="c-tr">
+                <td class="c-td">grid__col--2</td>
+                <td class="c-td">2</td>
               </tr>
-              <tr>
-                <td>grid__col--1</td>
-                <td>1</td>
+              <tr class="c-tr">
+                <td class="c-td">grid__col--1</td>
+                <td class="c-td">1</td>
               </tr>
             </tbody>
           </table>
 
 		  		<h2 class="u-heading-4">Gutters</h2>
-		  		<p>Abby has customizable gutters. By default the grid gutters are set to <code>0.8rem</code>. This can be changed in <code>/src/_variables.scss</code>.</p>
+		  		<p>Abby has customizable gutters. By default the grid gutters are set to <code>1rem</code>. This can be changed in <code>/src/_variables.scss</code>.</p>
  				</section>
 
  				<section class="docs-section" id="forms">
  					<h1 class="docs-section__heading">Forms</h1>
  					<p>Abby's forms are kept as simple and usable as can be while still looking good. Abby's grid system can be used in conjuction with the forms to create different layouts.</p>
- 					<form>
- 					  <fieldset>
+ 					<form class="c-form">
+ 					  <fieldset class="c-fieldset">
  					  	<div class="grid">
 				  			<div class="grid__col">
-				  				<label for="">Name</label>
-				  				<input type="text" placeholder="Name">
+				  				<label class="c-label" for="">Name</label>
+				  				<input class="c-input" type="text" placeholder="Name">
 				  			</div>
 				  		  <div class="grid__col">
-				  		  	<label for="">Email</label>
-				  		  	<input type="email" placeholder="Email">
+				  		  	<label class="c-label" for="">Email</label>
+				  		  	<input class="c-input" type="email" placeholder="Email">
 				  		  </div>
  					  	</div>
- 					    <label for="">Country</label>
- 					    <select name="" id="">
+ 					    <label class="c-label" for="">Country</label>
+ 					    <select class="c-input" name="" id="">
  					      <option value="">Canada</option>
  					      <option value="">France</option>
  					      <option value="">USA</option>
  					      <option value="">UK</option>
  					    </select>
  					  </fieldset>
- 					  <fieldset>
- 					    <label for="checkbox">
- 					      <input type="checkbox" id="checkbox"> Signup for Newsletter
+ 					  <fieldset class="c-fieldset">
+ 					    <label class="c-label" for="checkbox">
+ 					      <input c-input-option type="checkbox" id="checkbox"> Signup for Newsletter
  					    </label>
- 					    <label for="radio">
- 					      <input type="radio" id="radio"> Signup for Newsletter
+ 					    <label class="c-label" for="radio">
+ 					      <input c-input-option type="radio" id="radio"> Signup for Newsletter
  					    </label>
  					  </fieldset>
- 					  <fieldset>
- 					    <label for="message">Message:</label>
- 					    <textarea id="message" placeholder="What's on your mind?" cols="30" rows="3"></textarea>
+ 					  <fieldset class="c-fieldset">
+ 					    <label class="c-label" for="message">Message:</label>
+ 					    <textarea class="c-input c-textarea" id="message" placeholder="What's on your mind?" cols="30" rows="3"></textarea>
  					  </fieldset>
- 					  <button type="submit">Submit</button>
+ 					  <button class="c-button" type="submit">Submit</button>
  					</form>
 
           <p>Example Markup:</p>
 
- 					<pre><code class="language-markup">&lt;form&gt;
-  &lt;fieldset&gt;
+ 					<pre><code class="language-markup">&lt;form class="c-form"&gt;
+  &lt;fieldset class="c-fieldset"&gt;
     &lt;div class="grid"&gt;
       &lt;div class="grid__col"&gt;
-    	  &lt;label for=""&gt;Name&lt;/label&gt;
-    	  &lt;input type="text" placeholder="Name"&gt;
+    	  &lt;label class="c-label" for=""&gt;Name&lt;/label&gt;
+    	  &lt;input class="c-input" type="text" placeholder="Name"&gt;
       &lt;/div&gt;
       &lt;div class="grid__col"&gt;
-        &lt;label for=""&gt;Email&lt;/label&gt;
-        &lt;input type="email" placeholder="Email"&gt;
+        &lt;label class="c-label" for=""&gt;Email&lt;/label&gt;
+        &lt;input class="c-input" type="email" placeholder="Email"&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;label for=""&gt;Country&lt;/label&gt;
-    &lt;select name="" id=""&gt;
+    &lt;label class="c-label" for=""&gt;Country&lt;/label&gt;
+    &lt;select class="c-input" name="" id=""&gt;
       &lt;option value=""&gt;Canada&lt;/option&gt;
       &lt;option value=""&gt;France&lt;/option&gt;
       &lt;option value=""&gt;USA&lt;/option&gt;
@@ -280,138 +279,154 @@
     &lt;/select&gt;
   &lt;/fieldset&gt;
 
-  &lt;fieldset&gt;
-    &lt;label for="checkbox"&gt;
-      &lt;input type="checkbox" id="checkbox"&gt; Signup for Newsletter
+  &lt;fieldset class="c-fieldset"&gt;
+    &lt;label class="c-label" for="checkbox"&gt;
+      &lt;input class="c-input-option" type="checkbox" id="checkbox"&gt; Signup for Newsletter
     &lt;/label&gt;
-    &lt;label for="radio"&gt;
-      &lt;input type="radio" id="radio"&gt; Signup for Newsletter
+    &lt;label class="c-label" for="radio"&gt;
+      &lt;input class="c-input-option" type="radio" id="radio"&gt; Signup for Newsletter
     &lt;/label&gt;
   &lt;/fieldset&gt;
-  &lt;fieldset&gt;
-    &lt;label for="message"&gt;Message:&lt;/label&gt;
-    &lt;textarea id="message" placeholder="What's on your mind?" cols="30" rows="3"&gt;&lt;/textarea&gt;
+  &lt;fieldset class="c-fieldset"&gt;
+    &lt;label class="c-label" for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea class="c-input c-textarea" id="message" placeholder="What's on your mind?" cols="30" rows="3"&gt;&lt;/textarea&gt;
   &lt;/fieldset&gt;
 
-  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+  &lt;button class="c-button" type="submit"&gt;Submit&lt;/button&gt;
 &lt;/form&gt;</code></pre>
  				</section>
 
  				<section class="docs-section" id="buttons">
  					<h1 class="docs-section__heading">Buttons</h1>
- 					<button type="button">Button Element</button>
- 					<a href="" class="button">Anchor Button</a>
- 					<input type="button" value="Button Input">
- 					<input type="submit" value="Submit Input">
+ 					<button type="button" class="c-button">Button Element</button>
+ 					<a href="" class="c-button">Anchor Button</a>
+ 					<input class="c-button" type="button" value="Button Input">
+ 					<input class="c-button" type="submit" value="Submit Input">
 
           <p>Example Markup:</p>
 
-          <pre><code class="language-markup">&lt;button type="button">Button Element&lt;/button&gt;
-&lt;a href="" class="button"&gt;Anchor Button&lt;/a&gt;
-&lt;input type="button" value="Button Input"&gt;
-&lt;input type="submit" value="Submit Input"&gt;</code></pre>
+          <pre><code class="language-markup">&lt;button class="c-button" type="button">Button Element&lt;/button&gt;
+&lt;a class="c-button" href="" &gt;Anchor Button&lt;/a&gt;
+&lt;input class="c-button" type="button" value="Button Input"&gt;
+&lt;input class="c-button" type="submit" value="Submit Input"&gt;</code></pre>
  				</section>
 
  				<section class="docs-section" id="lists">
  					<h1 class="docs-section__heading">Lists</h1>
- 					<ul>
- 					  <li>List item 1</li>
- 					  <li>List item 2</li>
- 					  <ul>
- 					    <li>Sublist item 1</li>
- 					    <li>Sublist item 2</li>
- 					    <li>Sublist item 3</li>
+          <h2 class="u-heading-4">Unordered Lists</h2>
+ 					<ul class="c-list">
+ 					  <li class="c-list-item">List item 1</li>
+ 					  <li class="c-list-item">List item 2</li>
+ 					  <ul class="c-list">
+ 					    <li class="c-list-item">Sublist item 1</li>
+ 					    <li class="c-list-item">Sublist item 2</li>
+ 					    <li class="c-list-item">Sublist item 3</li>
  					  </ul>
- 					  <li>List item 3</li>
- 					  <li>List item 4</li>
+ 					  <li class="c-list-item">List item 3</li>
+ 					  <li class="c-list-item">List item 4</li>
  					</ul>
-          <ol>
-            <li>List item 1</li>
-            <li>List item 2</li>
-            <ol>
-              <li>Sublist item 1</li>
-              <li>Sublist item 2</li>
-              <li>Sublist item 3</li>
+          <h2 class="u-heading-4">Ordered Lists</h2>
+          <ol class="c-list">
+            <li class="c-list-item">List item 1</li>
+            <li class="c-list-item">List item 2</li>
+            <ol class="c-list">
+              <li class="c-list-item">Sublist item 1</li>
+              <li class="c-list-item">Sublist item 2</li>
+              <li class="c-list-item">Sublist item 3</li>
             </ol>
-            <li>List item 3</li>
-            <li>List item 4</li>
           </ol>
+          <h2 class="u-heading-4">Clean Lists</h2>
+          <ul class="c-list c-list--clean">
+            <li class="c-list-item">List item 1</li>
+            <li class="c-list-item">List item 2</li>
+            <ul class="c-list c-list--clean">
+              <li class="c-list-item">Sublist item 1</li>
+              <li class="c-list-item">Sublist item 2</li>
+              <li class="c-list-item">Sublist item 3</li>
+            </ul>
+          </ul>
 
           <p>Example Markup:</p>
 
-          <pre><code class="language-markup">&lt;ul&gt;
-  &lt;li&gt;List item 1&lt;/li&gt;
-  &lt;li&gt;List item 2&lt;/li&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Sublist item 1&lt;/li&gt;
-    &lt;li&gt;Sublist item 2&lt;/li&gt;
-    &lt;li&gt;Sublist item 3&lt;/li&gt;
+          <pre><code class="language-markup">&lt;ul class="c-list"&gt;
+  &lt;li class="c-list-item"&gt;List item 1&lt;/li&gt;
+  &lt;li class="c-list-item"&gt;List item 2&lt;/li&gt;
+  &lt;ul class="c-list"&gt;
+    &lt;li class="c-list-item"&gt;Sublist item 1&lt;/li&gt;
+    &lt;li class="c-list-item"&gt;Sublist item 2&lt;/li&gt;
+    &lt;li class="c-list-item"&gt;Sublist item 3&lt;/li&gt;
   &lt;/ul&gt;
-  &lt;li&gt;List item 3&lt;/li&gt;
-  &lt;li&gt;List item 4&lt;/li&gt;
+  &lt;li class="c-list-item"&gt;List item 3&lt;/li&gt;
+  &lt;li class="c-list-item"&gt;List item 4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Clean List --&gt;
+&lt;ul class="c-list c-list--clean"&gt;
+  &lt;li class="c-list-item"&gt;List item 1&lt;/li&gt;
+  &lt;li class="c-list-item"&gt;List item 2&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
  				</section>
 
  				<section class="docs-section" id="tables">
  					<h1 class="docs-section__heading">Tables</h1>
- 					<table>
+ 					<table class="c-table">
  					  <thead>
- 					    <tr>
- 					      <th>Name</th>
- 					      <th>Age</th>
- 					      <th>Sex</th>
- 					      <th>Location</th>
+ 					    <tr class="c-tr">
+ 					      <th class="c-th">Name</th>
+ 					      <th class="c-th">Age</th>
+ 					      <th class="c-th">Strength</th>
+ 					      <th class="c-th">Agility</th>
  					    </tr>
  					  </thead>
  					  <tbody>
- 					    <tr>
- 					      <td>Dave Gamache</td>
- 					      <td>26</td>
- 					      <td>Male</td>
- 					      <td>San Francisco</td>
+ 					    <tr class="c-tr">
+ 					      <td class="c-td">Bob Sprocket</td>
+ 					      <td class="c-td">26</td>
+ 					      <td class="c-td">56</td>
+ 					      <td class="c-td">24</td>
  					    </tr>
- 					    <tr>
- 					      <td>Dwayne Johnson</td>
- 					      <td>42</td>
- 					      <td>Male</td>
- 					      <td>Hayward</td>
+ 					    <tr class="c-tr">
+ 					      <td class="c-td">Sally Smith</td>
+ 					      <td class="c-td">42</td>
+ 					      <td class="c-td">44</td>
+ 					      <td class="c-td">68</td>
  					    </tr>
- 					    <tr>
- 					      <td>Mary Jane</td>
- 					      <td>23</td>
- 					      <td>Female</td>
- 					      <td>New York</td>
+ 					    <tr class="c-tr">
+ 					      <td class="c-td">Leon Leverson</td>
+ 					      <td class="c-td">88</td>
+ 					      <td class="c-td">20</td>
+ 					      <td class="c-td">5</td>
  					    </tr>
  					  </tbody>
  					</table>
           <p>Example Markup:</p>
-          <pre><code class="language-markup">&lt;table&gt;
+          <pre><code class="language-markup">&lt;table class="c-table"&gt;
   &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Name&lt;/th&gt;
-      &lt;th&gt;Age&lt;/th&gt;
-      &lt;th&gt;Sex&lt;/th&gt;
-      &lt;th&gt;Location&lt;/th&gt;
+    &lt;tr class="c-tr"&gt;
+      &lt;th class="c-th"&gt;Name&lt;/th&gt;
+      &lt;th class="c-th"&gt;Age&lt;/th&gt;
+      &lt;th class="c-th"&gt;Sex&lt;/th&gt;
+      &lt;th class="c-th"&gt;Location&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Dave Gamache&lt;/td&gt;
-      &lt;td&gt;26&lt;/td&gt;
-      &lt;td&gt;Male&lt;/td&gt;
-      &lt;td&gt;San Francisco&lt;/td&gt;
+    &lt;tr class="c-tr"&gt;
+      &lt;td class="c-td"&gt;Bob Sprocket&lt;/td&gt;
+      &lt;td class="c-td"&gt;26&lt;/td&gt;
+      &lt;td class="c-td"&gt;56&lt;/td&gt;
+      &lt;td class="c-td"&gt;24&lt;/td&gt;
     &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Dwayne Johnson&lt;/td&gt;
-      &lt;td&gt;42&lt;/td&gt;
-      &lt;td&gt;Male&lt;/td&gt;
-      &lt;td&gt;Hayward&lt;/td&gt;
+    &lt;tr class="c-tr"&gt;
+      &lt;td class="c-td"&gt;Sally Smith&lt;/td&gt;
+      &lt;td class="c-td"&gt;42&lt;/td&gt;
+      &lt;td class="c-td"&gt;44&lt;/td&gt;
+      &lt;td class="c-td"&gt;68&lt;/td&gt;
     &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Mary Jane&lt;/td&gt;
-      &lt;td&gt;23&lt;/td&gt;
-      &lt;td&gt;Female&lt;/td&gt;
-      &lt;td&gt;New York&lt;/td&gt;
+    &lt;tr class="c-tr"&gt;
+      &lt;td class="c-td"&gt;Leon Leverson&lt;/td&gt;
+      &lt;td class="c-td"&gt;88&lt;/td&gt;
+      &lt;td class="c-td"&gt;20&lt;/td&gt;
+      &lt;td class="c-td"&gt;5&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
@@ -446,33 +461,33 @@
         <h3 class="u-heading-5">Breakpoints</h3>
         <p>Abby provides some media query mixins to helpout with responsive design. These are the default breakpoints, which are configurable in <code>src/_variables.scss</code>.</p>
 
-        <table>
+        <table class="c-table">
           <thead>
-            <tr>
-              <th>Key Name</th>
-              <th>Value (px)</th>
+            <tr class="c-tr">
+              <th class="c-th">Key Name</th>
+              <th class="c-th">Value (px)</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>xsmall</td>
-              <td>400</td>
+            <tr class="c-tr">
+              <td class="c-td">xsmall</td>
+              <td class="c-td">400</td>
             </tr>
-            <tr>
-              <td>small</td>
-              <td>640</td>
+            <tr class="c-tr">
+              <td class="c-td">small</td>
+              <td class="c-td">640</td>
             </tr>
-            <tr>
-              <td>medium</td>
-              <td>768</td>
+            <tr class="c-tr">
+              <td class="c-td">medium</td>
+              <td class="c-td">768</td>
             </tr>
-            <tr>
-              <td>large</td>
-              <td>960</td>
+            <tr class="c-tr">
+              <td class="c-td">large</td>
+              <td class="c-td">960</td>
             </tr>
-            <tr>
-              <td>xlarge</td>
-              <td>1200</td>
+            <tr class="c-tr">
+              <td class="c-td">xlarge</td>
+              <td class="c-td">1200</td>
             </tr>
           </tbody>
         </table>
@@ -501,109 +516,111 @@
         <h2 class="u-heading-4">Helper Classes</h2>
         <h3 class="u-heading-5">Font Sizes</h3>
 
-        <table>
+        <table class="c-table">
           <thead>
-            <tr>
-              <th>Class Name</th>
-              <th>Value (rem)</th>
+            <tr class="c-tr">
+              <th class="c-th">Class Name</th>
+              <th class="c-th">Value (rem)</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>u-heading-1</td>
-              <td>5.062</td>
+            <tr class="c-tr">
+              <td class="c-td">u-heading-1</td>
+              <td class="c-td">5.062</td>
             </tr>
-            <tr>
-              <td>u-heading-2</td>
-              <td>4.218</td>
+            <tr class="c-tr">
+              <td class="c-td">u-heading-2</td>
+              <td class="c-td">4.218</td>
             </tr>
-            <tr>
-              <td>u-heading-3</td>
-              <td>3.374</td>
+            <tr class="c-tr">
+              <td class="c-td">u-heading-3</td>
+              <td class="c-td">3.374</td>
             </tr>
-            <tr>
-              <td>u-heading-4</td>
-              <td>2.812</td>
+            <tr class="c-tr">
+              <td class="c-td">u-heading-4</td>
+              <td class="c-td">2.812</td>
             </tr>
-            <tr>
-              <td>u-heading-5</td>
-              <td>2.250</td>
+            <tr class="c-tr">
+              <td class="c-td">u-heading-5</td>
+              <td class="c-td">2.250</td>
             </tr>
-            <tr>
-              <td>u-heading-6</td>
-              <td>1.875</td>
+            <tr class="c-tr">
+              <td class="c-td">u-heading-6</td>
+              <td class="c-td">1.875</td>
             </tr>
           </tbody>
         </table>
+        <p>Example:</p>
+        <pre><code class="language-markup">&lt;span class="u-heading-1"&gt;Television Rules the Nation&lt;/span&gt;</code></pre>
 
         <h3 class="u-heading-5">Background Colors</h3>
 
-        <table>
+        <table class="c-table">
           <thead>
-            <tr>
-              <th>Class Name</th>
-              <th>Color</th>
+            <tr class="c-tr">
+              <th class="c-th">Class Name</th>
+              <th class="c-th">Color</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>u-bg-black</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-black</td>
               <td class="u-bg-black"></td>
             </tr>
-            <tr>
-              <td>u-bg-dark-grey</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-dark-grey</td>
               <td class="u-bg-dark-grey"></td>
             </tr>
-            <tr>
-              <td>u-bg-mid-grey</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-mid-grey</td>
               <td class="u-bg-mid-grey"></td>
             </tr>
-            <tr>
-              <td>u-bg-light-grey</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-light-grey</td>
               <td class="u-bg-light-grey"></td>
             </tr>
-            <tr>
-              <td>u-bg-white</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-white</td>
               <td class="u-bg-white"></td>
             </tr>
-            <tr>
-              <td>u-bg-red</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-red</td>
               <td class="u-bg-red"></td>
             </tr>
-            <tr>
-              <td>u-bg-pink</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-pink</td>
               <td class="u-bg-pink"></td>
             </tr>
-            <tr>
-              <td>u-bg-purple</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-purple</td>
               <td class="u-bg-purple"></td>
             </tr>
-            <tr>
-              <td>u-bg-indigo</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-indigo</td>
               <td class="u-bg-indigo"></td>
             </tr>
-            <tr>
-              <td>u-bg-blue</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-blue</td>
               <td class="u-bg-blue"></td>
             </tr>
-            <tr>
-              <td>u-bg-cyan</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-cyan</td>
               <td class="u-bg-cyan"></td>
             </tr>
-            <tr>
-              <td>u-bg-green</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-green</td>
               <td class="u-bg-green"></td>
             </tr>
-            <tr>
-              <td>u-bg-yellow</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-yellow</td>
               <td class="u-bg-yellow"></td>
             </tr>
-            <tr>
-              <td>u-bg-orange</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-orange</td>
               <td class="u-bg-orange"></td>
             </tr>
-            <tr>
-              <td>u-bg-brown</td>
+            <tr class="c-tr">
+              <td class="c-td">u-bg-brown</td>
               <td class="u-bg-brown"></td>
             </tr>
           </tbody>

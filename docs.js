@@ -1,47 +1,26 @@
 (function(window, document) {
 
   var header = document.querySelector('.docs-header');
-  var spacer = document.querySelector('.docs-header-spacer');
 
-  var originalOffsetTop = undefined;
+  var target = header.clientHeight;
 
   var breakpoint = 768;
 
-  document.addEventListener('DOMContentLoaded', handleLoad);
   window.addEventListener('scroll', handleScroll);
-  window.addEventListener('resize', handleLoad);
 
   function handleScroll() {
 
     if (window.innerWidth > breakpoint) {
       var scrolled = window.pageYOffset;
 
-      if (scrolled < originalOffsetTop && header.classList.contains('docs-header--fixed')) {
-        header.classList.remove('docs-header--fixed');
-        spacer.classList.remove('docs-header-spacer--active');
+      if (scrolled >= target && !(header.classList.contains('docs-header--fixed'))) {
+        header.classList.add('docs-header--fixed');
       }
 
-      if (scrolled >= (originalOffsetTop) && !(header.classList.contains('docs-header--fixed'))) {
-        header.classList.add('docs-header--fixed');
-        spacer.classList.add('docs-header-spacer--active');
+      if (scrolled < target && header.classList.contains('docs-header--fixed')) {
+        header.classList.remove('docs-header--fixed');
       }
     }    
-  }
-
-  function handleLoad() {
-
-    if (window.innerWidth > breakpoint) {
-      var headerOffset = header.getBoundingClientRect();
-
-      if (!header.classList.contains('docs-header--fixed'))
-        originalOffsetTop = headerOffset.top;
-
-      if (window.pageYOffset < originalOffsetTop && header.classList.contains('docs-header--fixed')) {
-        header.classList.remove('docs-header--fixed');
-        spacer.classList.remove('docs-header-spacer--active');
-      }
-    }
-    
   }
 
 }(window, document));

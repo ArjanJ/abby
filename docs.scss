@@ -1,6 +1,6 @@
 @import "../src/abby";
 
-$header-height: 7.8rem + $base-space * 2;
+$header-height: 7.3rem + $base-space * 2;
 $navy: #311D3F;
 $red: #E23E57;
 
@@ -21,6 +21,10 @@ pre[class*=language-] {
 .docs {
 	@include clearfix;
 
+	///
+	/// HEADER
+	///
+
 	&-header {
 		display: flex;
 		justify-content: center;
@@ -32,7 +36,7 @@ pre[class*=language-] {
 		right: 0;
 		width: 100%;
 		z-index: 10;
-		background: rgba(color(white), 1);
+		background: color(white);
 		opacity: 0;
 		visibility: hidden;
 		transform: scale(1.5);
@@ -44,22 +48,24 @@ pre[class*=language-] {
 			transform: scale(1);
 		}
 
-		@include bp(medium) {
+		@include bp(large) {
 			display: flex;
-			position: static;
 			min-height: 0;
 			flex-direction: row;
 			margin-bottom: ($base-space * 2.25);
 			padding: (0) ($base-space / 2);
-			background: rgba(color(white), 0.85);
 			opacity: 1;
 			visibility: visible;
 			transform: none;
+			backface-visibility: hidden;
+			background: none;
 
 			&--fixed {
 				position: fixed;
 				top: 0;
 				left: 0;
+				background: color(white);
+				box-shadow: 0 6px 23px rgba(black, 0.1);
 			}
 		}
 	}
@@ -75,22 +81,25 @@ pre[class*=language-] {
 
 	&-nav {
 		width: 100%;
-		padding: ($base-space);
+		padding: ($base-space) (0);
 
 		&__link {
 			display: block;
 			text-align: center;
-			padding: ($base-space / 2.25) ($base-space);
+			padding: ($base-space / 2.25) (0);
 			color: $navy;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: ($base-space / 12);
 			font-size: map-get($heading-sizes, 5);
 			@include ease();
 
 			&:hover {
-				color: $red;
+				color: color(red);
 			}
 		}
 
-		@include bp(medium) {
+		@include bp(large) {
 			text-align: center;
 			white-space: nowrap;
 			overflow-x: scroll;
@@ -98,34 +107,31 @@ pre[class*=language-] {
 
 			&__link {
 				display: inline-block;
-				font-size: map-get($heading-sizes, 6);
-				padding: ($base-space);
+				font-size: 1.3rem;
+				padding: ($base-space) ($base-space / 1.5);
 			}
 		}
 	}
 
+	///
+	/// INTRO
+	///
+
 	&-intro {
 		@include clearfix;
 		display: block;
-		min-height: 100vh;
-		margin-bottom: ($base-space * 1.5);
+		min-height: 850px;
+		margin-bottom: ($base-space * 2);
 		background: color(white);
 
-		&__left,
-		&__right {
-			padding: ($base-space * 1.5) (0);
+		&__left {
+			padding: ($base-space * 3) (0);
+			background: color(white);
 		}
 
 		&__right {
+			padding: ($base-space * 2) (0);
 			background: color(light-grey);
-
-			@include bp(large) {
-				background: transparent;
-			}
-			
-			h1 {
-				color: $navy;
-			}
 		}
 
 		&__wrapper {
@@ -134,22 +140,60 @@ pre[class*=language-] {
 			padding: 0 ($base-space);
 
 			@include bp(medium) {
-				padding: 0 ($base-space * 1.5);
+				padding: 0 ($base-space * 2);
 			}
 		}
 
 		&__heading {
-			color: $navy;
-			font-size: 6.327rem;
+			color: color(red);
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: (7.258rem);
+			text-shadow: 
+				1px 1px mix(black, color(red), 30),
+				2px 2px mix(black, color(red), 30),
+				3px 3px mix(black, color(red), 30),
+				4px 4px mix(black, color(red), 30),
+				5px 5px mix(black, color(red), 30),
+				6px 6px mix(black, color(red), 30);
+
+			@include bp(large) {
+				font-size: (7.258rem * 1.618);
+			}
 		}
 
 		&__subheading {
-			font-size: map-get($heading-sizes, 6);
+			font-size: map-get($heading-sizes, 4);
+			color: $navy;
+		}
+
+		.c-button {
+			margin-right: ($base-space / 2);
+			border-radius: 999px;
+
+			&:hover {
+				transform: scale(1.05);
+			}
 		}
 
 		&__dl-btn {
 			color: color(white);
-			background: $red;
+			background: color(green);
+			box-shadow: 
+				1px 1px mix(black, color(green), 25),
+				2px 2px mix(black, color(green), 25),
+				3px 3px mix(black, color(green), 25),
+				4px 4px mix(black, color(green), 25),
+				5px 5px mix(black, color(green), 25);
+		}
+
+		&__gh-btn {
+			box-shadow: 
+				1px 1px mix(black, color(light-grey), 25),
+				2px 2px mix(black, color(light-grey), 25),
+				3px 3px mix(black, color(light-grey), 25),
+				4px 4px mix(black, color(light-grey), 25),
+				5px 5px mix(black, color(light-grey), 25);
 		}
 
 		code {
@@ -165,7 +209,6 @@ pre[class*=language-] {
 
 		@include bp(large) {
 			display: flex;
-			margin-bottom: 0;
 
 			&__left,
 			&__right {
@@ -177,6 +220,10 @@ pre[class*=language-] {
 			}
 		}
 	}
+
+	///
+	/// SECTIONS
+	///
 
 	&-section {
 		@include clearfix;
@@ -190,36 +237,18 @@ pre[class*=language-] {
 			color: $navy;
 			padding: ($base-space) (0);
 			font-size: map-get($heading-sizes, 3);
-			margin-bottom: ($base-space * 1.5);
-
-			&:before,
-			&:after {
-				content: "";
-				display: block;
-				width: 100%;
-				height: 3px;
-				position: absolute;
-				left: 0;
-				background: $red;
-				transform: scaleX(0.03);
-			}
-
-			&:before {
-				top: 0;
-			}
-
-			&:after {
-				bottom: 0;
-			}
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: ($base-space / 8);
 		}
 
-		.grid-last {
+		.c-grid-last {
 			margin-bottom: $base-space;
 		}
 
 		&--typography {
 
-			.grid__col:first-of-type {
+			.c-grid__col:first-of-type {
 				margin-bottom: ($base-space);
 			}
 
@@ -233,7 +262,7 @@ pre[class*=language-] {
 
 		&--grid {
 
-			.grid__col {
+			.c-grid__col {
 				display: flex;
 				align-items: center;
 				padding-left: ($base-space / 2);
@@ -245,14 +274,20 @@ pre[class*=language-] {
 		}
 
 		@include bp(medium) {
-			margin: (0) (auto) ($base-space * 2);
+			margin: (0) (auto) ($base-space * 1);
 
 			&__heading {
-				margin-bottom: ($base-space * 3);
+				margin-bottom: ($base-space * 2);
+				font-size: map-get($heading-sizes, 2);
 			}
 		}
 	}
 }
+
+
+
+
+
 
 .hamburger {
 
@@ -292,7 +327,7 @@ pre[class*=language-] {
     }
   }
 
-	@include bp(medium) {
+	@include bp(large) {
 		display: none;
 	}
 }
