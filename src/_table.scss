@@ -2,33 +2,27 @@
 		#TABLE
 \*------------------------------------*/
 
-table,
-.table {
+.c-table {
 	box-sizing: border-box;
 	width: 100%;
 	margin: (0) (0) ($base-space);
 	border-collapse: collapse;
 }
 
-th,
-.th,
-td,
-.td {
+.c-th,
+.c-td {
 	padding: ($base-space / 2);
 }
 
-th,
-.th {
+.c-th {
 	text-align: left;
 }
 
-tr,
-.tr {
+.c-tr {
 
 	&:nth-child(odd) {
 
-		td,
-		.td {
+		.c-td {
 			background: color(light-grey);
 		}
 	}

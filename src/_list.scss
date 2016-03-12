@@ -2,16 +2,18 @@
 		#LIST
 \*------------------------------------*/
 
-ul,
-ol {
-	margin: (0) (0) ($base-space) ($base-space / 1.5);
+.c-list {
+	margin: (0) (0) ($base-space);
 
-	ul,
-	ol {
-		margin: (0) (0) (0) ($base-space / 1.5);
+	.c-list {
+		margin: (0) (0) (0) ($base-space);
 	}
-}
 
-li {
-	margin-bottom: ($base-space / 3);
+	&-item {
+		margin-bottom: ($base-space / 4);
+	}
+
+	&--clean {
+		list-style-type: none;
+	}
 }

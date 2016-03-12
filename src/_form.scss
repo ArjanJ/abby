@@ -2,37 +2,21 @@
     #FORM
 \*------------------------------------*/
 
-form,
-.form {
+.c-form {
   margin: (0) (0) ($base-space);
 }
 
-fieldset,
-.fieldset {
+.c-fieldset {
   border: none;
   margin: (0) (0) ($base-space / 2);
 }
 
-label,
-.label {
+.c-label {
   display: block;
   margin-bottom: ($base-space / 6);
 }
 
-[type="text"],
-[type="email"],
-[type="number"],
-[type="url"],
-[type="tel"],
-[type="search"],
-[type="date"],
-[type="month"],
-[type="date"],
-.input,
-select,
-.select,
-textarea,
-.textarea {
+.c-input {
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -52,14 +36,12 @@ textarea,
   }
 }
 
-textarea,
-.textarea {
+.c-textarea {
   height: auto;
   min-height: ($base-space * 1.5);
 }
 
-[type='checkbox'],
-[type='radio'] {
+.c-input-option {
   display: inline-block;
   margin-right: ($base-space / 6);
   padding: 0;
