@@ -3,7 +3,7 @@ A lightweight HTML/CSS boilerplate, built with SCSS.
 
 [![NPM](https://nodei.co/npm/abby.png?compact=true)](https://npmjs.org/package/abby)
 
-<span class="badge-npmdownloads"><a href="https://www.npmjs.com/package/abby" title="View this project on NPM"><img src="https://img.shields.io/github/downloads/atom/atom/total.svg" alt="NPM downloads" /></a></span>
+[![npm version](https://badge.fury.io/js/abby.svg)](https://badge.fury.io/js/abby)
 
 <a href="https://github.com/ArjanJ/abby/archive/master.zip" download>Download Zip</a>
 
