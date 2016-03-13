@@ -1,7 +1,7 @@
 # Abby
 A lightweight HTML/CSS boilerplate, built with SCSS.
 
-[![NPM](https://nodei.co/npm/abby.png?compact=true)](https://npmjs.org/package/abby)
+[![NPM](https://nodei.co/npm/abby.png?downloads=true)](https://npmjs.org/package/abby)
 
 [![npm version](https://badge.fury.io/js/abby.svg)](https://badge.fury.io/js/abby)
 
