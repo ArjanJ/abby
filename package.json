@@ -1,7 +1,7 @@
 {
   "name": "abby",
-  "version": "1.0.4",
-  "description": "A lightweight HTML/CSS boilerplate, built with SCSS",
+  "version": "1.0.5",
+  "description": "A lightweight HTML/CSS boilerplate built with SCSS",
   "main": "./src/abby.scss",
   "scripts": {
     "start": "gulp",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/ArjanJ/abby.git"
   },
-  "author": "ArjanJ",
+  "author": "ArjanJ <hello@arjanjassal.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ArjanJ/abby/issues"
