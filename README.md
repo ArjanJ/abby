@@ -26,7 +26,10 @@ npm install abby --save-dev
 View the documentation [here](http://abby.arjanjassal.me).
 
 ### Overview
-Coming soon.
+- 5kb
+- Customizable project settings in SCSS config file
+- Follows BEM/BEMIT CSS class naming convention
+- Unintrusive
 
 ### License
 [MIT](http://cjpatoilo.mit-license.org/)
