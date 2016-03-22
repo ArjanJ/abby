@@ -3,6 +3,7 @@
 $header-height: 7.3rem + $base-space * 2;
 $navy: #311D3F;
 $red: #E23E57;
+$primary-color: color(black);
 
 body {
 	background: color(white);
@@ -87,7 +88,7 @@ pre[class*=language-] {
 			display: block;
 			text-align: center;
 			padding: ($base-space / 2.25) (0);
-			color: $navy;
+			color: $primary-color;
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: ($base-space / 12);
@@ -95,14 +96,13 @@ pre[class*=language-] {
 			@include ease();
 
 			&:hover {
-				color: color(red);
+				color: color(blue);
 			}
 		}
 
 		@include bp(large) {
 			text-align: center;
 			white-space: nowrap;
-			overflow-x: scroll;
 			padding: 0;
 
 			&__link {
@@ -145,17 +145,17 @@ pre[class*=language-] {
 		}
 
 		&__heading {
-			color: color(red);
+			color: $primary-color;
 			font-weight: 700;
 			font-size: (7.258rem);
-			letter-spacing: (-$base-space / 10);
-			text-shadow: 
-				1px 1px mix(black, color(red), 10),
-				2px 2px mix(black, color(red), 20),
-				3px 3px mix(black, color(red), 30),
-				4px 4px mix(black, color(red), 40),
-				5px 5px mix(black, color(red), 50),
-				6px 6px mix(black, color(red), 60);
+			letter-spacing: (-$base-space / 6);
+			// text-shadow: 
+			// 	1px 1px mix(black, color(red), 10),
+			// 	2px 2px mix(black, color(red), 20),
+			// 	3px 3px mix(black, color(red), 30),
+			// 	4px 4px mix(black, color(red), 40),
+			// 	5px 5px mix(black, color(red), 50),
+			// 	6px 6px mix(black, color(red), 60);
 
 			@include bp(large) {
 				font-size: (7.258rem * 1.618);
@@ -164,7 +164,7 @@ pre[class*=language-] {
 
 		&__subheading {
 			font-size: map-get($heading-sizes, 4);
-			color: $navy;
+			color: $primary-color;
 		}
 
 		.c-button {
@@ -178,28 +178,18 @@ pre[class*=language-] {
 
 		&__dl-btn {
 			color: color(white);
-			background: color(green);
-			box-shadow: 
-				1px 1px mix(black, color(green), 25),
-				2px 2px mix(black, color(green), 25),
-				3px 3px mix(black, color(green), 25),
-				4px 4px mix(black, color(green), 25),
-				5px 5px mix(black, color(green), 25);
+			background: color(blue);
+			box-shadow: 4px 4px mix(black, color(blue), 25);
 		}
 
 		&__gh-btn {
-			box-shadow: 
-				1px 1px mix(black, color(light-grey), 25),
-				2px 2px mix(black, color(light-grey), 25),
-				3px 3px mix(black, color(light-grey), 25),
-				4px 4px mix(black, color(light-grey), 25),
-				5px 5px mix(black, color(light-grey), 25);
+			box-shadow: 4px 4px mix(black, color(light-grey), 25);
 		}
 
 		code {
 			display: inline-block;
 			padding: ($base-space / 4) ($base-space / 1.5);
-			background: $navy;
+			background: $primary-color;
 			color: color(white);
 		}
 
@@ -234,7 +224,7 @@ pre[class*=language-] {
 		&__heading {
 			text-align: center;
 			position: relative;
-			color: $navy;
+			color: $primary-color;
 			padding: ($base-space) (0);
 			font-size: map-get($heading-sizes, 3);
 		}
@@ -316,7 +306,7 @@ pre[class*=language-] {
     margin: 0 0 5px 0;
     width: 30px;
     height: 2px;
-    background: $navy;
+    background: $primary-color;
     pointer-events: none;
 
     &:last-child {

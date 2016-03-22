@@ -552,7 +552,7 @@ pre[class*=language-] {
     display: block;
     text-align: center;
     padding: 1.16352rem 0;
-    color: #311D3F;
+    color: #212121;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.21816rem;
@@ -560,12 +560,11 @@ pre[class*=language-] {
     -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1); }
     .docs-nav__link:hover {
-      color: #F44336; }
+      color: #2196F3; }
   @media (min-width: 960px) {
     .docs-nav {
       text-align: center;
       white-space: nowrap;
-      overflow-x: scroll;
       padding: 0; }
       .docs-nav__link {
         display: inline-block;
@@ -596,17 +595,16 @@ pre[class*=language-] {
       .docs-intro__wrapper {
         padding: 0 5.23585rem; } }
   .docs-intro__heading {
-    color: #F44336;
+    color: #212121;
     font-weight: 700;
     font-size: 7.258rem;
-    letter-spacing: -0.26179rem;
-    text-shadow: 1px 1px #dc3c31, 2px 2px #c3362b, 3px 3px #ab2f26, 4px 4px #922820, 5px 5px #7a221b, 6px 6px #621b16; }
+    letter-spacing: -0.43632rem; }
     @media (min-width: 960px) {
       .docs-intro__heading {
         font-size: 11.74344rem; } }
   .docs-intro__subheading {
     font-size: 2.618rem;
-    color: #311D3F; }
+    color: #212121; }
   .docs-intro .c-button {
     margin-right: 1.30896rem;
     border-radius: 999px; }
@@ -615,14 +613,14 @@ pre[class*=language-] {
               transform: scale(1.05); }
   .docs-intro__dl-btn {
     color: #FAFAFA;
-    background: #4CAF50;
-    box-shadow: 1px 1px #39833c, 2px 2px #39833c, 3px 3px #39833c, 4px 4px #39833c, 5px 5px #39833c; }
+    background: #2196F3;
+    box-shadow: 4px 4px #1971b6; }
   .docs-intro__gh-btn {
-    box-shadow: 1px 1px #b5b5b5, 2px 2px #b5b5b5, 3px 3px #b5b5b5, 4px 4px #b5b5b5, 5px 5px #b5b5b5; }
+    box-shadow: 4px 4px #b5b5b5; }
   .docs-intro code {
     display: inline-block;
     padding: 0.65448rem 1.74528rem;
-    background: #311D3F;
+    background: #212121;
     color: #FAFAFA; }
   .docs-intro #___plusone_0 {
     vertical-align: middle !important; }
@@ -663,7 +661,7 @@ pre[class*=language-] {
   .docs-section__heading {
     text-align: center;
     position: relative;
-    color: #311D3F;
+    color: #212121;
     padding: 2.61792rem 0;
     font-size: 3.427rem; }
   .docs-section .c-grid-last {
@@ -712,7 +710,7 @@ pre[class*=language-] {
     margin: 0 0 5px 0;
     width: 30px;
     height: 2px;
-    background: #311D3F;
+    background: #212121;
     pointer-events: none; }
     .hamburger__patty:last-child {
       margin-bottom: 0; }
