@@ -24,7 +24,7 @@
  * COLORS
  */
 /**
- * TRANSITIONS
+ * EASINGS
  */
 /*------------------------------------*		#MIXINS
 \*------------------------------------*/
@@ -32,12 +32,19 @@
 \*------------------------------------*/
 /*------------------------------------*		#MIXINS / BREAKPOINTS
 \*------------------------------------*/
+/*------------------------------------*    #MIXINS - COVER
+\*------------------------------------*/
+/*------------------------------------*    #MIXINS - SHADOWS
+\*------------------------------------*/
 /*------------------------------------*    #MIXINS - TRANSITIONS
 \*------------------------------------*/
 /*------------------------------------*		#FUNCTIONS
 \*------------------------------------*/
 /**
  * COLORS
+ */
+/**
+ * EASINGS
  */
 /*------------------------------------*		#BASE
 \*------------------------------------*/
@@ -146,6 +153,9 @@ body {
 p {
   margin: 0 0 2.61792rem; }
 
+a {
+  color: #9C27B0; }
+
 h1,
 h2,
 h3,
@@ -163,23 +173,23 @@ h1 {
 
 h2 {
   font-size: 4.236rem;
-  margin-bottom: 2.15644rem; }
+  margin-bottom: 1.618rem; }
 
 h3 {
   font-size: 3.427rem;
-  margin-bottom: 1.618rem; }
+  margin-bottom: 1.21877rem; }
 
 h4 {
   font-size: 2.618rem;
-  margin-bottom: 1.21877rem; }
+  margin-bottom: 0.99997rem; }
 
 h5 {
   font-size: 2.148rem;
-  margin-bottom: 0.99997rem; }
+  margin-bottom: 0.76391rem; }
 
 h6 {
   font-size: 1.618rem;
-  margin-bottom: 0.76391rem; }
+  margin-bottom: 0.61802rem; }
 
 small {
   font-size: 75%; }
@@ -236,8 +246,58 @@ small {
       -webkit-flex-wrap: no-wrap;
           -ms-flex-wrap: no-wrap;
               flex-wrap: no-wrap; }
+      .c-grid--col {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .c-grid--center {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .c-grid--middle {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center; }
+      .c-grid--start {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; }
+      .c-grid--top {
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                    -ms-grid-row-align: flex-start;
+                align-items: flex-start; }
+      .c-grid--end {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+      .c-grid--bottom {
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                    -ms-grid-row-align: flex-end;
+                align-items: flex-end; }
+      .c-grid--space-h {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+      .c-grid--space-v {
+        -webkit-box-align: space-between;
+        -webkit-align-items: space-between;
+            -ms-flex-align: space-between;
+                    -ms-grid-row-align: space-between;
+                align-items: space-between; }
       .c-grid__col {
-        margin-left: 1.00689rem; }
+        margin-left: 1.6362rem; }
         .c-grid__col:first-child {
           margin-left: 0; } }
 
@@ -274,13 +334,12 @@ small {
   padding: 0.65448rem 0.87264rem;
   border-radius: 5px;
   vertical-align: middle;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #F1F1F1;
   font: inherit;
   color: inherit;
   background: white; }
   .c-input:focus {
-    outline: none;
-    box-shadow: 0 0 4px 1px grey; }
+    outline: none; }
 
 .c-textarea {
   height: auto;
@@ -312,7 +371,7 @@ small {
   cursor: pointer;
   color: #212121;
   background: #F1F1F1; }
-  .c-button:focus {
+  .c-button:focus, .c-button:active {
     outline: none; }
 
 /*------------------------------------*		#TABLE
@@ -369,26 +428,32 @@ code {
  * FONT-SIZES
  */
 .u-heading-1 {
+  display: block;
   font-size: 5.545rem;
   line-height: 1.2; }
 
 .u-heading-2 {
+  display: block;
   font-size: 4.236rem;
   line-height: 1.2; }
 
 .u-heading-3 {
+  display: block;
   font-size: 3.427rem;
   line-height: 1.2; }
 
 .u-heading-4 {
+  display: block;
   font-size: 2.618rem;
   line-height: 1.2; }
 
 .u-heading-5 {
+  display: block;
   font-size: 2.148rem;
   line-height: 1.2; }
 
 .u-heading-6 {
+  display: block;
   font-size: 1.618rem;
   line-height: 1.2; }
 
@@ -396,19 +461,19 @@ code {
   margin-bottom: 2.61792rem; }
 
 .u-heading-2 {
-  margin-bottom: 2.15644rem; }
-
-.u-heading-3 {
   margin-bottom: 1.618rem; }
 
-.u-heading-4 {
+.u-heading-3 {
   margin-bottom: 1.21877rem; }
 
-.u-heading-5 {
+.u-heading-4 {
   margin-bottom: 0.99997rem; }
 
-.u-heading-6 {
+.u-heading-5 {
   margin-bottom: 0.76391rem; }
+
+.u-heading-6 {
+  margin-bottom: 0.61802rem; }
 
 /**
  * BACKGROUND-COLOR
@@ -503,9 +568,7 @@ pre[class*=language-] {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1); }
+          transform: scale(1.5); }
   .docs-header--active {
     opacity: 1;
     visibility: visible;
@@ -556,9 +619,7 @@ pre[class*=language-] {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.21816rem;
-    font-size: 2.148rem;
-    -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
-    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1); }
+    font-size: 2.148rem; }
     .docs-nav__link:hover {
       color: #2196F3; }
   @media (min-width: 960px) {
@@ -682,7 +743,7 @@ pre[class*=language-] {
             align-items: center;
     padding-left: 1.30896rem;
     height: 35px;
-    margin-bottom: 1.00689rem;
+    margin-bottom: 1.6362rem;
     border-radius: 5px;
     background: #F1F1F1; }
   @media (min-width: 768px) {
