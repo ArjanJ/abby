@@ -18,6 +18,7 @@
 
 	.u-heading-#{$key},
 	%u-heading-#{$key} {
+		display: block;
 		font-size: $value;
 		line-height: $line-height-headings;
 	}
@@ -30,27 +31,27 @@
 
 .u-heading-2,
 %u-heading-2 {
-  margin-bottom: ($base-space / 1.214);
+  margin-bottom: ($base-space / 1.618);
 }
 
 .u-heading-3,
 %u-heading-3 {
-  margin-bottom: ($base-space / 1.618);
+  margin-bottom: ($base-space / 2.148);
 }
 
 .u-heading-4,
 %u-heading-4 {
-  margin-bottom: ($base-space / 2.148);
+  margin-bottom: ($base-space / 2.618);
 }
 
 .u-heading-5,
 %u-heading-5 {
-  margin-bottom: ($base-space / 2.618);
+  margin-bottom: ($base-space / 3.427);
 }
 
 .u-heading-6,
 %u-heading-6 {
-  margin-bottom: ($base-space / 3.427);
+  margin-bottom: ($base-space / 4.236);
 }
 
 

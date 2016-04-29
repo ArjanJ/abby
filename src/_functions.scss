@@ -16,3 +16,18 @@
 	@warn "Unknown `#{$key}` in $colors.";
 	@return null;
 }
+
+/**
+ * EASINGS
+ */
+
+@function ease($key) {
+
+	@if map-has-key($easings, $key) {
+		@return map-get($easings, $key);
+
+	}
+
+	@warn "Unknown `#{$key}` in $easings.";
+	@return null;
+}

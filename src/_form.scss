@@ -25,14 +25,13 @@
   padding: ($base-space / 4) ($base-space / 3);
   border-radius: 5px;
   vertical-align: middle;
-  border: 1px solid color(mid-grey);
+  border: 1px solid color(light-grey);
   font: inherit;
   color: inherit;
   background: white;
   
   &:focus {
     outline: none;
-    box-shadow: 0 0 4px 1px grey;
   }
 }
 

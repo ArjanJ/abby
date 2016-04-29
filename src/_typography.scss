@@ -11,6 +11,10 @@ p {
   margin: 0 0 $base-space;
 }
 
+a {
+  color: $link-color;
+}
+
 h1,
 h2,
 h3,
@@ -30,27 +34,27 @@ h1 {
 
 h2 {
   font-size: map-get($heading-sizes, 2);
-  margin-bottom: ($base-space / 1.214);
+  margin-bottom: ($base-space / 1.618);
 }
 
 h3 {
   font-size: map-get($heading-sizes, 3);
-  margin-bottom: ($base-space / 1.618);
+  margin-bottom: ($base-space / 2.148);
 }
 
 h4 {
   font-size: map-get($heading-sizes, 4);
-  margin-bottom: ($base-space / 2.148);
+  margin-bottom: ($base-space / 2.618);
 }
 
 h5 {
   font-size: map-get($heading-sizes, 5);
-  margin-bottom: ($base-space / 2.618);
+  margin-bottom: ($base-space / 3.427);
 }
 
 h6 {
   font-size: map-get($heading-sizes, 6);
-  margin-bottom: ($base-space / 3.427);
+  margin-bottom: ($base-space / 4.236);
 }
 
 small {

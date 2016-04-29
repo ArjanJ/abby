@@ -21,6 +21,42 @@
 		display: flex;
 		flex-wrap: no-wrap;
 
+		&--col {
+			flex-direction: column;
+		}
+
+		&--center {
+			justify-content: center;
+		}
+
+		&--middle {
+			align-items: center;
+		}
+
+		&--start {
+			justify-content: flex-start;
+		}
+
+		&--top {
+			align-items: flex-start;
+		}
+
+		&--end {
+			justify-content: flex-end;
+		}
+
+		&--bottom {
+			align-items: flex-end;
+		}
+
+		&--space-h {
+			justify-content: space-between;
+		}
+
+		&--space-v {
+			align-items: space-between;
+		}
+
 		&__col {
 			margin-left: $grid-gutter;
 

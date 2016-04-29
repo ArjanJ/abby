@@ -20,7 +20,8 @@
 	color: $text-color;
 	background: color(light-grey);
 
-	&:focus {
+	&:focus,
+	&:active {
 		outline: none;
 	}
 }
