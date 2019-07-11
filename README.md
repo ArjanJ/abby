@@ -23,7 +23,7 @@ npm install abby --save-dev
 ```
 
 ### Documentation
-View the documentation [here](http://abby.arjanjassal.me).
+View the documentation [here](https://arjanj.github.io/abby/).
 
 ### Overview
 - 5kb
